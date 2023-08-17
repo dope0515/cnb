@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+/*.sub_con .sns_bx {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.sub_con .sns_bx > a {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  background: url(../images/icon/sns_i.png) no-repeat;
+  height: 16px;
+  width: 12px;
+}
+
+.recom_clinic_con .month_top .sns_bx,
+.clinic_view_con .sns_bx  {
+  margin-bottom: 0;
+}
+
+.recom_clinic_con .month_top .sns_bx > a:nth-child(1),
+.clinic_view_con .sns_bx > a:nth-child(1),
+.sub_con .sns_bx > a:nth-child(1) {
+  background-position: 6px 0;
+  padding-right: 0;
+}
+
+.recom_clinic_con .month_top .sns_bx > a:nth-child(1)::before,
+.clinic_view_con .sns_bx > a:nth-child(1)::before,
+.sub_con .sns_bx > a:nth-child(1)::before {
+  display: none;
+}
+
+.recom_clinic_con .month_top .sns_bx > a:nth-child(2),
+.clinic_view_con .sns_bx > a:nth-child(2),
+.sub_con .sns_bx > a:nth-child(2) {
+  background-position: -16px 0;
+  width: 15px;
+}
+
+.recom_clinic_con .month_top .sns_bx > a:nth-child(3),
+.clinic_view_con .sns_bx > a:nth-child(3),
+.sub_con .sns_bx > a:nth-child(3) {
+  width: 20px;
+  background: url(../images/icon/sns_twitter_i.png) no-repeat center;
+}
+
+.recom_clinic_con .month_top .sns_bx > a:nth-child(4),
+.clinic_view_con .sns_bx > a:nth-child(4),
+.sub_con .sns_bx > a:nth-child(4) {
+  position: relative;
+  width: 8px;
+  background: url(../images/icon/sns_kakaostory_i.png) no-repeat center;
+}
+
+.recom_clinic_con .month_top .sns_bx > a:nth-child(4) a,
+.clinic_view_con .sns_bx > a:nth-child(4) a,
+.sub_con .sns_bx > a:nth-child(4) a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+
+.recom_clinic_con .month_top .sns_bx > a:nth-child(4) a img,
+.clinic_view_con .sns_bx > a:nth-child(4) a img,
+.sub_con .sns_bx > a:nth-child(4) a img {
+  display: none;
+}
+
+.recom_clinic_con .month_top .sns_bx > a:nth-child(5),
+.clinic_view_con .sns_bx > a:nth-child(5),
+.sub_con .sns_bx > a:nth-child(5) {
+  background-position: -44px 0;
+  width: 15px;
+}
+
+.recom_clinic_con .month_top .sns_bx > a::before,
+.clinic_view_con .sns_bx > a::before,
+.sub_con .sns_bx > a::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  transform: translateY(-50%);
+  border-left: 1px solid #ddd;
+  height: 12px;
+  margin-top: 0;
+}
+
+.recom_clinic_con .month_top .sns_bx > a + a,
+.clinic_view_con .sns_bx > a + a,
+.sub_con .sns_bx > a + a {
+  margin-left: -2px;
+}*/
+
+/* 2021-01-06 JTS ( 푸터 SNS 인스타그램 추가 ) */
+.footer_wrap .right_box .sns_link_list li.li_04 a {
+  background-image: url(../images/icon/btn_sns_youtube.png);
+  background-size: cover;
+  background-position: 0 0;
+}
+
+/* 2021-01-15 JTS ( 리스트 카테고리 박스 수정 ) */
+.img_board_list_type_01 li a .txt_box .type:before {
+  display: none !important;
+}
+
+/* 2021-03-11 14:12 banghg (예약바로가기 버튼 추가 [카카오톡 실시간 상담 / 진료예약 / 전화간편예약 ]) */
+.reservation-bx-list {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.reservation-bx-list .item {
+  flex: 1 0 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.reservation-bx-list .link {
+  border: 1px solid #ddd;
+  padding: 20px 80px;
+  position: relative;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #222;
+}
+
+.reservation-bx-list .icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  margin-top: -25px;
+}
+
+
+.video_wrap .video_txt .btn_about {
+  background-color: rgba(255,255,255,0.8);
+  color: #000000;
+  border-radius: 2rem;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.video_wrap .video_txt .btn_about:hover {
+  background-color: #fff;
+}
+
+/* 2022-03-08 ysb */
+.main_visual .video_wrap {
+  height: auto;
+}
+.main_visual .video_wrap .video_txt {
+  height: 100%;
+  background: none;
+}
+#knowledge-video-slider {
+  max-width: 1030px;
+  margin:0 auto;
+}
+#knowledge-video-slider .slick-arrow {
+  width: 32px;
+  height: 59px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#knowledge-video-slider .slick-prev {
+  background-image: url(../images/slider/btn_left_2.png);
+  left: -35px;
+}
+#knowledge-video-slider .slick-next {
+  background-image: url(../images/slider/btn_right_2.png);
+  right: -35px;
+}
+
+/* 2022-03-21 ysb */
+.sub_section_wrap .sub_con.knowledge-video-section {
+  padding-bottom: 0;
+}
+.knowledge-video-section .img_board_wrap {
+  border-top:0; border-bottom:0; padding: 0;
+}
+
+/* 2023-03-20 의료진 소개 추가*/
+.medical-staff-2{
+	margin-top: 30px;
+}
+.medical-staff-2 .box{
+	width: 100%;
+	height: 260px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	column-gap: 150px;
+	margin-bottom: 80px;
+}
+.medical-staff-2 .img-bx{
+    display: block;
+    position: relative;
+    overflow: hidden;
+	width: 320px;
+}
+/*.medical-staff-2 .img-bx::after{*/
+/*	content: "";*/
+/*    display: block;*/
+/*    padding-bottom: 104.391304%;*/
+/*}*/
+.medical-staff-2 .img-bx img{
+/*	display: block;*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*    min-width: 1000%;*/
+/*    min-height: 1000%;*/
+/*    max-width: none;*/
+/*    max-height: none;*/
+/*    transform: translate(-50%,-50%) scale(0.1);*/
+}
+.medical-staff-2 .txt-bx{
+	padding: 50px 0;
+}
+.medical-staff-2 .txt-bx .title{
+	display:flex;
+	align-items: flex-end;
+	line-height: 1;
+	column-gap: 15px;
+}
+.medical-staff-2 .txt-bx .name{
+	font-size: 32px;
+	color: #222;
+	font-weight: 500;
+}
+.medical-staff-2 .txt-bx .location{
+	font-size: 18px;
+	color: #222;
+	font-weight: 300;
+}
+.medical-staff-2 .desc{
+	font-size: 16px;
+	color: #333;
+	margin-top: 15px;
+}
+.medical-staff-2 .link-wrap{
+	display:flex;
+	column-gap: 6px;
+	margin-top: 50px;
+}
+.medical-staff-2 .link-wrap .link{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width: 122px;
+	height: 42px;
+	border: 1px solid #222;
+}	
+.medical-staff-2 .link-wrap .link:nth-child(1) {
+	background: transparent;
+	color: #222;
+}
+.medical-staff-2 .link-wrap .link:nth-child(2) {
+	background: #222;
+	color: #fff;
+}
+
+.sub_con--staff_detail_new .staff_detail , .sub_con--staff_detail_new .board_view_btn_box , .staff_profile--new .inner{
+	max-width: 1100px;
+	margin: 0 auto;
+	width: 100%;
+	min-width: 1100px;
+}
+.sub_con--staff_detail_new .staff_profile--new {
+	max-width: 100%;
+	min-width: 100%;
+	padding: 0;
+	border: 0;
+	margin-bottom: 45px;
+	margin-top: 50px;
+}
+.staff_profile--new .inner{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 185px;
+	height: 270px;
+}
+.staff_profile--new .img_bx{
+	/* height: 311px; */
+	padding-right:0;
+	float: none;
+}
+.staff_profile--new .img_bx img{
+	height: 300px !important;
+	position: absolute;
+	bottom: 0;
+	object-fit: cover;
+}
+.staff_profile--new .txt_bx{
+	width: 43%;
+}
+.staff_profile--new .tit_bx{
+	border-bottom: 0 !important;
+	margin-bottom: 0 !important;
+	padding-bottom: 10px;
+}
+.staff_profile--new .tit_bx .name{
+	margin-right: 10px ;
+	font-size: 32px;
+	font-weight: 500;
+}
+.staff_profile--new .bot_btn_bx{
+	position: unset !important;
+	margin-top: 35px;
+}
+.staff_profile--new .btn-type-01{
+	background: transparent;
+	margin-right: 5px;
+}
+
+
+/* 2023-03-21 기존 페이지 수정 */
+.img_board_list_doctor li .img_box.img_box_bg{
+	background: none;
+}
+
+/* 2023-04-07 의료진소개 리스트 여백 수정 */
+.medical-staff-2 .txt-bx {
+	padding-top: 0 !important;
+	padding-bottom: 40px !important;
+}
+.medical-staff-2 .desc {
+	min-height: 40px;
+}
+.medical-staff-2 .link-wrap {
+	margin-top: 30px !important;
+}
+
+/* 2023-04-07 의료진소개상세 수정 */
+.sub_con--staff_detail_new .staff_profile--new {
+	min-height: 310px;
+	display: flex;
+    align-items: flex-end;
+	justify-content: center;
+}
+.staff_profile--new .inner  {
+	height: 310px;
+	column-gap: 160px;
+}
+.staff_profile .img_bx {
+	width: 370px;
+}
+.staff_profile--new .img_bx img{
+	height: 370px !important;
+	max-width: 370px;
+}
+.staff_profile .tit_bx .name .camel {
+    color: #222222 !important;
+	font-weight: 500;
+}
+
+

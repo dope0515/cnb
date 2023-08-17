@@ -1,0 +1,562 @@
+@charset "UTF-8";
+
+/* 2020-04-10 JTS */
+.pop-con.pop_common .sns_bx > a {
+  padding-top: 55px;
+  margin: 0 5px;
+  width: 68px;
+  font-size: 13px;
+}
+
+.pop-con.pop_common .sns_bx > a:nth-child(1) {
+  background-image: url(../images/icon/face_i.png);
+}
+
+.pop-con.pop_common .sns_bx > a:nth-child(2) {
+  background-image: url(../images/icon/kakao_i.png);
+}
+
+.pop-con.pop_common .sns_bx > a:nth-child(3) {
+  margin-top: 10px;
+  background-image: url(../images/icon/twitter_i.png);
+}
+
+.pop-con.pop_common .sns_bx > a:nth-child(4) {
+  position: relative;
+  margin-top: 10px;
+  background-image: url(../images/icon/kakaostory_i.png);
+}
+
+.pop-con.pop_common .sns_bx > a:nth-child(4) > a {
+  background-image: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.pop-con.pop_common .sns_bx > a:nth-child(4) > a img {
+  display: none;
+}
+
+/* 2021-03-11 14:12 banghg (예약바로가기 버튼 추가 [카카오톡 실시간 상담 / 진료예약 / 전화간편예약 ]) 
+2021-03-16 13:18 banghg 모바일 추가*/
+.reservation-bx-list {
+  margin-left: -10px;
+  margin-right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.reservation-bx-list .item {
+  flex: 1 0 50%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.reservation-bx-list .link {
+  border: 1px solid #ddd;
+  padding: 10px 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: #222;
+}
+
+.reservation-bx-list .icon {
+  margin-right: 4px;
+  width: 30px;
+}
+
+/* 2021-08-23 JTS (커뮤니티 > 치료전후사진) */
+.sub_con .tbl_top > p {
+  padding-right: 0 !important;
+  margin-bottom: 12px !important;
+}
+
+/* 2022-03-08 ysb */
+.branding_main .video_txt {
+  top: auto;
+  margin-top: 0;
+  height: auto;
+  background: none;
+  bottom: 50px;
+}
+
+/* 2022-03-08 ysb */
+.sub_con .sub_clinic_tit {
+  color: #222;
+  margin: 0 0 5px;
+  font-weight: 500;
+}
+#knowledge-video-slider.img_board_list_type_01 li {
+  width: 100% !important;
+}
+#knowledge-video-slider .slick-dots li {
+  width: 10px !important;
+}
+#knowledge-video-slider .slick-dots li.slick-active {
+  width: 15px !important;
+}
+.sub_section_wrap .sub_con.knowledge-video-section {
+  min-height: auto;
+}
+#knowledge-video-slider .img_box {
+  height: auto !important;
+}
+#knowledge-video-slider .yt-responsive > div,
+#knowledge-video-slider .yt-responsive iframe {
+  max-width: none !important;
+  max-height: none !important;
+}
+#knowledge-video-slider .yt-responsive {
+  height: 0;
+}
+#knowledge-video-slider .yt-responsive > div {
+  padding:0 !important;
+}
+#knowledge-video-slider .yt-responsive > div > div {
+  padding-bottom: 56.25% !important;
+}
+
+
+/*의료진 소개*/
+/*의료진 소개 */
+.img_board_list_doctor {
+  margin: 0 -5px;
+}
+
+.img_board_list_doctor li {
+  margin: 10px 0;
+  padding: 0 5px;
+}
+
+.img_board_list_doctor li .img_box {
+  border: 1px solid #ddd;
+}
+
+.img_board_list_doctor li .img_box img {
+  height: 100%;
+  width: 100%;
+}
+
+.img_board_list_doctor li .txt_box {
+  padding: 12px 5px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-top: none;
+  text-align: center;
+}
+
+.img_board_list_doctor li .txt_box .doctor_name {
+  font-size: 17px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.img_board_list_doctor li .txt_box .doctor_name .camel {
+  color: #cc8006;
+  font-weight: 500;
+}
+
+.img_board_list_doctor li .txt_box .doctor_des span {
+  position: relative;
+  padding: 0 4px;
+  font-size: 13px;
+  letter-spacing: -1px;
+}
+
+.img_board_list_doctor li .txt_box .doctor_des span:first-child:before {
+  display: none;
+}
+
+.img_board_list_doctor li .txt_box .doctor_des span:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 12px;
+  margin-top: -6px;
+  border-left: 1px solid #ddd;
+}
+
+.img_board_list_doctor li .bot_btn_box {
+  margin-top: 10px;
+}
+
+.img_board_list_doctor li .bot_btn_box a {
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #222;
+  font-size: 13px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.img_board_list_doctor li .bot_btn_box a.btn_01 {
+  background: #fff;
+  color: #222;
+}
+
+.img_board_list_doctor li .bot_btn_box a.btn_01:hover {
+  background: #222;
+  color: #fff;
+}
+
+.img_board_list_doctor li .bot_btn_box a.btn_02 {
+  background: #222;
+  color: #fff;
+}
+
+.img_board_list_doctor li .bot_btn_box a.btn_02:hover {
+  background: #fff;
+  color: #222;
+}
+
+.bar_tit {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  padding-left: 5px;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: #333;
+  border-left: 3px solid #ffb400;
+}
+
+.staff_detail {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.staff_profile {
+  border-top: 2px solid #000;
+  overflow: hidden;
+}
+
+.staff_profile .img_bx {
+  float: left;
+  width: 130px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.staff_profile .bot_btn_bx {
+  margin-top: 20px;
+}
+
+.staff_profile .bot_btn_bx.pc_ver {
+  display: none;
+}
+
+
+.staff_profile .bot_btn_bx a {
+  float: left;
+  width: 33.333%;
+  box-sizing: border-box;
+  min-width: auto;
+  font-size: 14px;
+  border-left: none;
+}
+
+.staff_profile .bot_btn_bx a:first-child {
+  border-left: 1px solid #000;
+}
+
+.staff_profile .bot_btn_bx a:first-child:hover {
+  border-color: #996005;
+}
+
+.staff_profile .bot_btn_bx:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.staff_profile .txt_bx {
+  overflow: hidden;
+}
+
+.staff_profile .tit_bx {
+
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  color: #222;
+}
+
+.staff_profile .tit_bx .name {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.staff_profile .tit_bx .name .camel {
+  color: #cc8006;
+}
+
+.staff_profile .tit_bx .loca {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  margin-right: 10px;
+}
+
+.staff_profile .tit_bx .doctor_des {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* .staff_profile .tit_bx .doctor_des:before {
+  content: '';
+  width: 10px;
+  border-bottom: 1px solid #000;
+  display: inline-block;
+}
+ */
+.main_time_clm>div {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.main_time_clm table {
+  min-width: 500px;
+}
+
+.main_time_clm .schedule_tbl {
+  width: 100%;
+  text-align: center;
+}
+
+.main_time_clm .schedule_tbl th,
+.main_time_clm .schedule_tbl td {
+  padding: 8px 5px;
+  color: #333;
+}
+
+.main_time_clm .schedule_tbl th .name,
+.main_time_clm .schedule_tbl td .name {
+  color: #996005;
+  font-weight: 500;
+}
+
+.main_time_clm .schedule_tbl th i,
+.main_time_clm .schedule_tbl td i {
+  display: inline-block;
+  background-image: url(../images/icon/ox_i.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 20px auto;
+  width: 10px;
+  height: 10px;
+}
+
+.main_time_clm .schedule_tbl th i.off,
+.main_time_clm .schedule_tbl td i.off {
+  background-position: -10px 0;
+}
+
+.main_time_clm .schedule_tbl tbody td {
+  border-top: 1px solid #ddd;
+}
+
+.main_time_clm .schedule_tbl tbody tr:first-child td {
+  border-top: 0;
+}
+
+.main_time_clm .schedule_tbl thead th {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+.timetable {
+  padding-bottom: 40px;
+}
+
+.timetable-week,
+.timetable-weekend {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  height: 145px;
+}
+
+.timetable-reserve {
+  float: left;
+  text-align: center;
+  width: 100%;
+  background-color: #62676e;
+}
+
+.timetable-reserve a {
+  font-size: 17px;
+  font-weight: 500;
+  width: 100%;
+  display: inline-block;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.timetable-reserve img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.timetable-reserve i {
+  margin-left: 30px;
+  transition: 0.3s;
+}
+
+.timetable-reserve:hover i {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.timetable-week .tit,
+.timetable-weekend .tit {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.timetable-week {
+  background-color: #2a2e32;
+}
+
+.timetable-week .tit {
+  color: #ffb400;
+}
+
+.timetable-week .txt {
+  color: #fff;
+  font-size: 13px;
+  display: block;
+}
+
+.timetable-weekend {
+  background-color: #ffb400;
+}
+
+.timetable-weekend .tit {
+  color: #6e4400;
+}
+
+.timetable-weekend .txt {
+  color: #222;
+  font-size: 13px;
+  display: block;
+}
+
+
+
+/* 의료진 소개 리스트 모바일*/
+.medical-staff-2 .box{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0;
+	margin: 50px 0;
+}
+.medical-staff-2 .img-bx{
+	width: 230px;
+	height: 230px;
+	margin-top: -60px;
+}
+.medical-staff-2 .img-bx img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.medical-staff-2 .txt-bx{
+	width: 90%;
+	padding: 10px 15px;
+}
+.medical-staff-2 .txt-bx .title{
+	display:flex;
+	align-items: flex-end;
+	line-height: 1;
+	column-gap: 8px;
+}
+.medical-staff-2 .txt-bx .name{
+	font-size: 22px;
+	color: #222;
+	font-weight: 500;
+}
+.medical-staff-2 .txt-bx .location{
+	font-size: 14px;
+	color: #222;
+	font-weight: 300;
+}
+.medical-staff-2 .desc{
+	font-size: 14px;
+	color: #333;
+	margin-top: 8px;
+}
+.medical-staff-2 .link-wrap{
+	display:flex;
+	margin-top: 30px;
+}
+.medical-staff-2 .link-wrap .link{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 41px;
+	border: 1px solid #222;
+}	
+.medical-staff-2 .link-wrap .link:nth-child(1) {
+	background: transparent;
+	color: #222;
+}
+.medical-staff-2 .link-wrap .link:nth-child(2) {
+	background: #222;
+	color: #fff;
+}
+.sub_section_wrap .sub_con_medical2 .sub_tit h2{
+	font-size: 24px !important;
+	font-weight: 600 !important;
+	display: block;
+	padding-bottom: 30px;
+}
+
+
+/* 2023-04-28 진료 예약하기 페이지*/
+.mobile-reservation-wrap .form_w .tbl_bx .branch_list .col-lg-2{
+	width: 24.67%;
+}
+.mobile-reservation-wrap .form_w .tbl_bx .branch_list li a{
+	font-size: 13px;
+}
+.mobile-reservation-wrap .reservation-bx-list .link{
+	font-size: 12px;
+}
+.mobile-reservation-wrap .doctor_list .col-lg-3{
+	width: 50%;
+	margin-bottom: 10px;
+}
