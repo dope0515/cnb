@@ -33,7 +33,7 @@
 
 .ptt_better {width: 100%; min-height: 335px; border: 5px solid #ddd;display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px;}
 
-.ptt_table .beige {background-color: #fff7ea;}
+.ptt_table.beige {background-color: #fff7ea;}
 
 .ptt_better strong {font-weight: 300; font-size: 30px; letter-spacing: -0.05em; color: #000;}
 
