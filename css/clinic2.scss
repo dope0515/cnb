@@ -1,7 +1,11 @@
 /*
 /pc/cnp/css/clinic2.css 
 */
-
+.clinic_editor_wrap {
+    * {
+        box-sizing: border-box;
+    }
+}
 .clinic_title_name span {letter-spacing: 0;}
 
 .center_bx {max-width: 1100px; margin: 0 auto;}
@@ -12,6 +16,7 @@
     border: 40px solid #f9f9f9; box-sizing: border-box;
     .clinic_inner {
         background-color: #fff;
+        padding: 50px;
     }
 }
 .clinic_badge_wrap {
@@ -31,8 +36,8 @@
     font-size: 18px;
     font-weight: 700;
     border-radius: 35px;
-    width: 260px;
-    padding: 9px;
+    width: fit-content;
+    padding: 9px 30px;
     box-sizing: border-box;
     &.y {
         color: #000;
@@ -121,36 +126,115 @@
     }
 }
 
-
 .clinic_table table {width: 100%;color: #000}
 .clinic_table table caption {font-size: 0; visibility: hidden;}
 
 /*골드 ptt*/
-.gold_ptt ul {display: flex; align-items: center; justify-content: center; max-width: 1025px; margin: 0 auto;} 
+.gold_ptt {
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1025px;
+        margin: 0 auto;
+        li {
+            display: flex;
+            align-items: center;
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 170px;
+                height: 170px;
+                font-weight: 700;
+                font-size: 22px;
+                color: #fff;
+                border-radius: 50%;
+                padding: 20px;
+            }
+            &::after {
+                content: '';
+                display: block;
+                width: 40px;
+                height: 40px;
+                background-image: url(/pc/cnp/images/special-clinic/clinic_ptt_plus.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0 20px;
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+            &:nth-child(odd) {
+                p {background-color: #ffb400;}
+            }
+            &:nth-child(even) {
+                p {background-color: #000;}
+            }
+        }
+    }
+    &.type02 {
+        li {
+            &::after {
+                width: 44px;
+                height: 44px;
+                background-image: url(/pc/cnp/images/special-clinic/plus_icon3.png);
+            }
+        }
+    }
+    &.laser_bx {
+        .badge {
+            width: 642px;
+            margin: 0 auto;
+        }
+    }
+} 
 
-.gold_ptt ul li {display: flex; align-items: center;} 
-
-.gold_ptt ul li p {display: flex; align-items: center; justify-content: center;width: 170px; height: 170px; font-weight: 700; font-size: 22px; color: #fff;border-radius: 50%; padding: 20px;}
-
-.gold_ptt ul li::after {content: ''; display: block; width: 40px; height: 40px; background-image: url(/pc/cnp/images/special-clinic/clinic_ptt_plus.png); background-repeat: no-repeat; background-size: cover; margin: 0 20px;}
-
-.gold_ptt ul li:last-child::after {display: none;}
-
-.gold_ptt ul li:nth-child(odd) p {background-color: #ffb400;}
-
-.gold_ptt ul li:nth-child(even) p {background-color: #000;}
-
-.ptt_better {width: 100%; min-height: 335px; border: 5px solid #ddd;display: flex; flex-direction: column; justify-content: center; align-items: center;}
-
-.ptt_better strong {font-weight: 300; font-size: 34px; letter-spacing: -0.05em; color: #000;}
-
-.ptt_better strong span {font-weight: 500; font-size: 34px; letter-spacing: -0.05em;}
-
-.ptt_better ul { margin-top: 50px; display: flex; justify-content: space-between; max-width: 550px; width: 100%;}
-
-.ptt_better.mens ul {max-width: 760px;} 
-
-.ptt_better ul li .img_bx {width: 50px; height: 50px; margin: 0 auto;margin-bottom: 40px; display: flex; align-items: center; justify-content: center;}
+.ptt_better {
+    width: 100%;
+    min-height: 335px; 
+    border: 5px solid #ddd;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    strong {
+        font-weight: 300; 
+        font-size: 34px; 
+        letter-spacing: -0.05em; 
+        color: #000;
+        span {
+            font-weight: 500; 
+            font-size: 34px; 
+            letter-spacing: -0.05em;
+        }
+    }
+    ul { 
+        margin-top: 50px; 
+        display: flex; 
+        justify-content: space-between; 
+        max-width: 550px; 
+        width: 100%;
+        li {
+            .img_bx {
+                width: 50px; 
+                height: 50px; 
+                margin: 0 auto;
+                margin-bottom: 40px; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center;
+            }
+        }
+    }
+    &.mens {
+        ul {
+            max-width: 760px;
+        }
+    }
+}
 
 .ptt_table thead tr th, .ptt_table tbody tr td {height: 50px; border-right: 1px solid #ddd;}
 
@@ -161,13 +245,93 @@
 .ptt_table tbody tr td {border-bottom: 1px solid #ddd; font-size: 16px;}
 .ptt_table tbody tr td:first-child {font-size: 18px; font-weight: 500;}
 
-.clininc_recommend {display: flex; align-items: center; justify-content: center; border: 40px solid #f9f9f9; padding: 20px;}
-.clininc_recommend .list_bx {
-    margin-left: 120px;
+.clininc_recommend {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border: 40px solid #f9f9f9; 
+    padding: 20px;
+    .list_bx {
+        margin-left: 120px;
+        ul {
+            background-color: #fff;
+            li {
+                font-weight: 400; 
+                font-size: 18px; 
+                color: #222; 
+                position: relative; 
+                margin-bottom: 16px; 
+                text-align: left;
+                &::before {
+                    content: ''; 
+                    display: inline-block;
+                    width: 30px; 
+                    height: 30px; 
+                    background-image: url(/pc/cnp/images/special-clinic/clinic_ptt__check_icon.png); 
+                    background-repeat: no-repeat; 
+                    background-size: cover; 
+                    vertical-align: -8px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
 }
-.clininc_recommend .list_bx ul {background-color: #fff;}
-.clininc_recommend .list_bx ul li {font-weight: 400; font-size: 18px; color: #222; position: relative; margin-bottom: 16px; text-align: left;}
-.clininc_recommend .list_bx ul li::before {content: ''; display: inline-block;width: 30px; height: 30px; background-image: url(/pc/cnp/images/special-clinic/clinic_ptt__check_icon.png); background-repeat: no-repeat; background-size: cover; vertical-align: -8px; margin-right: 8px;}
+
+.recommend_bx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    &.laser_bx {
+        gap: 120px;
+    }
+}
+
+.recommend_list {
+    ul {
+        background-color: #fff;
+        li {
+            font-weight: 400;
+            font-size: 16px;
+            color: #222;
+            position: relative;
+            margin-bottom: 16px;
+            text-align: left;
+            position: relative;
+            margin-left: 40px;
+            word-break: keep-all;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                background-image: url(/pc/cnp/images/special-clinic/clinic_ptt__check_icon.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                transform: translateY(-50%);
+                position: absolute;
+                top: 52%;
+                left: -40px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }  
+
+    &.type02 {
+        li {
+            margin-left: 30px;
+            &::before {
+                width: 18px;
+                height: 17px;
+                background-image: url(/pc/cnp/images/special-clinic/icon_check2.png);
+                left: -30px;
+            }
+        }
+    }  
+}
 
 .clinic_notice_list {
     background-color: #fff;
@@ -449,6 +613,33 @@
                     }
                 }
             }
+        }
+    }
+}
+
+/*holiday*/
+.holiday_bx {
+    .clinic_inner {
+        display: flex;
+        align-items: center;
+        padding: 40px;
+        .img_bx {
+            width: 28%;
+        }
+        .txt_bx {
+            width: 72%;
+            text-align: left;
+            .badge {
+                margin-bottom: 30px;
+            }
+        }
+        & + .clinic_inner {
+            margin-top: 30px;
+        }
+    }
+    &.reverse {
+        .clinic_inner {
+            flex-direction: row-reverse;
         }
     }
 }

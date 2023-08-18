@@ -2,6 +2,10 @@
 /*
 /pc/cnp/css/clinic2.css 
 */
+.clinic_editor_wrap * {
+  box-sizing: border-box;
+}
+
 .clinic_title_name span {
   letter-spacing: 0;
 }
@@ -25,6 +29,7 @@
 }
 .border_bx40 .clinic_inner {
   background-color: #fff;
+  padding: 50px;
 }
 
 .clinic_badge_wrap {
@@ -46,8 +51,9 @@
   font-size: 18px;
   font-weight: 700;
   border-radius: 35px;
-  width: 260px;
-  padding: 9px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 30px;
   box-sizing: border-box;
 }
 .badge.y {
@@ -167,12 +173,10 @@
   max-width: 1025px;
   margin: 0 auto;
 }
-
 .gold_ptt ul li {
   display: flex;
   align-items: center;
 }
-
 .gold_ptt ul li p {
   display: flex;
   align-items: center;
@@ -185,7 +189,6 @@
   border-radius: 50%;
   padding: 20px;
 }
-
 .gold_ptt ul li::after {
   content: "";
   display: block;
@@ -196,17 +199,23 @@
   background-size: cover;
   margin: 0 20px;
 }
-
 .gold_ptt ul li:last-child::after {
   display: none;
 }
-
 .gold_ptt ul li:nth-child(odd) p {
   background-color: #ffb400;
 }
-
 .gold_ptt ul li:nth-child(even) p {
   background-color: #000;
+}
+.gold_ptt.type02 li::after {
+  width: 44px;
+  height: 44px;
+  background-image: url(/pc/cnp/images/special-clinic/plus_icon3.png);
+}
+.gold_ptt.laser_bx .badge {
+  width: 642px;
+  margin: 0 auto;
 }
 
 .ptt_better {
@@ -218,20 +227,17 @@
   justify-content: center;
   align-items: center;
 }
-
 .ptt_better strong {
   font-weight: 300;
   font-size: 34px;
   letter-spacing: -0.05em;
   color: #000;
 }
-
 .ptt_better strong span {
   font-weight: 500;
   font-size: 34px;
   letter-spacing: -0.05em;
 }
-
 .ptt_better ul {
   margin-top: 50px;
   display: flex;
@@ -239,11 +245,6 @@
   max-width: 550px;
   width: 100%;
 }
-
-.ptt_better.mens ul {
-  max-width: 760px;
-}
-
 .ptt_better ul li .img_bx {
   width: 50px;
   height: 50px;
@@ -252,6 +253,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.ptt_better.mens ul {
+  max-width: 760px;
 }
 
 .ptt_table thead tr th, .ptt_table tbody tr td {
@@ -289,15 +293,12 @@
   border: 40px solid #f9f9f9;
   padding: 20px;
 }
-
 .clininc_recommend .list_bx {
   margin-left: 120px;
 }
-
 .clininc_recommend .list_bx ul {
   background-color: #fff;
 }
-
 .clininc_recommend .list_bx ul li {
   font-weight: 400;
   font-size: 18px;
@@ -306,7 +307,6 @@
   margin-bottom: 16px;
   text-align: left;
 }
-
 .clininc_recommend .list_bx ul li::before {
   content: "";
   display: inline-block;
@@ -317,6 +317,56 @@
   background-size: cover;
   vertical-align: -8px;
   margin-right: 8px;
+}
+
+.recommend_bx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+.recommend_bx.laser_bx {
+  gap: 120px;
+}
+
+.recommend_list ul {
+  background-color: #fff;
+}
+.recommend_list ul li {
+  font-weight: 400;
+  font-size: 16px;
+  color: #222;
+  position: relative;
+  margin-bottom: 16px;
+  text-align: left;
+  position: relative;
+  margin-left: 40px;
+  word-break: keep-all;
+}
+.recommend_list ul li::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(/pc/cnp/images/special-clinic/clinic_ptt__check_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 52%;
+  left: -40px;
+}
+.recommend_list ul li:last-child {
+  margin-bottom: 0;
+}
+.recommend_list.type02 li {
+  margin-left: 30px;
+}
+.recommend_list.type02 li::before {
+  width: 18px;
+  height: 17px;
+  background-image: url(/pc/cnp/images/special-clinic/icon_check2.png);
+  left: -30px;
 }
 
 .clinic_notice_list {
@@ -594,4 +644,27 @@
 }
 .mens_program_process .clinic_inner ul li:last-child::after {
   display: none;
+}
+
+/*holiday*/
+.holiday_bx .clinic_inner {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+.holiday_bx .clinic_inner .img_bx {
+  width: 28%;
+}
+.holiday_bx .clinic_inner .txt_bx {
+  width: 72%;
+  text-align: left;
+}
+.holiday_bx .clinic_inner .txt_bx .badge {
+  margin-bottom: 30px;
+}
+.holiday_bx .clinic_inner + .clinic_inner {
+  margin-top: 30px;
+}
+.holiday_bx.reverse .clinic_inner {
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=clinic2.css.map */

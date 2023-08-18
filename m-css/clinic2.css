@@ -25,6 +25,10 @@
   border: 20px solid #f9f9f9;
 }
 
+.border_bx40 .clinic_inner {
+  background-color: #fff;
+}
+
 .clinic_badge_wrap {
   display: flex;
   flex-direction: column;
@@ -129,12 +133,10 @@
   max-width: 1025px;
   margin: 0 auto;
 }
-
 .gold_ptt ul li {
   display: flex;
   align-items: center;
 }
-
 .gold_ptt ul li p {
   display: flex;
   align-items: center;
@@ -147,7 +149,6 @@
   border-radius: 50%;
   padding: 20px;
 }
-
 .gold_ptt ul li::after {
   content: "";
   display: block;
@@ -158,17 +159,18 @@
   background-size: cover;
   margin: 0 20px;
 }
-
 .gold_ptt ul li:last-child::after {
   display: none;
 }
-
 .gold_ptt ul li:nth-child(odd) p {
   background-color: #ffb400;
 }
-
 .gold_ptt ul li:nth-child(even) p {
   background-color: #000;
+}
+
+.ptt_table.beige {
+  background-color: #fff7ea;
 }
 
 .ptt_better {
@@ -180,24 +182,17 @@
   align-items: center;
   padding: 30px 30px 50px;
 }
-
-.ptt_table.beige {
-  background-color: #fff7ea;
-}
-
 .ptt_better strong {
   font-weight: 300;
   font-size: 20px;
   letter-spacing: -0.05em;
   color: #000;
 }
-
 .ptt_better strong span {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: -0.05em;
 }
-
 .ptt_better ul {
   margin-top: 20px;
   display: flex;
@@ -207,11 +202,9 @@
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .ptt_better ul li {
   width: calc(50% - 15px);
 }
-
 .ptt_better ul li .img_bx {
   width: 50px;
   height: 50px;
@@ -221,18 +214,21 @@
   align-items: center;
   justify-content: center;
 }
-
-.ptt_better ul li .txt_bx p {
+.ptt_better ul li .img_bx .txt_bx p {
   font-size: 12px;
   line-height: 1.25;
 }
-
 .ptt_better.mens ul {
   gap: 40px 20px;
 }
-
 .ptt_better.mens ul li {
   width: calc(33.3333333333% - 20px);
+}
+.ptt_better.holiday ul {
+  justify-content: center;
+}
+.ptt_better.holiday ul li {
+  width: calc(25% - 15px);
 }
 
 .ptt_table tbody tr td {
@@ -267,19 +263,15 @@
   border: 4px solid #000;
   padding: 20px;
 }
-
 .clininc_recommend .img_bx img {
   width: 50%;
 }
-
 .clininc_recommend .list_bx {
   margin-top: 40px;
 }
-
 .clininc_recommend .list_bx ul {
   background-color: #fff;
 }
-
 .clininc_recommend .list_bx ul li {
   font-weight: 400;
   font-size: 16px;
@@ -291,7 +283,6 @@
   margin-left: 40px;
   word-break: keep-all;
 }
-
 .clininc_recommend .list_bx ul li::before {
   content: "";
   display: inline-block;
@@ -304,6 +295,39 @@
   position: absolute;
   top: 52%;
   left: -40px;
+}
+
+.recommend_list ul {
+  background-color: #fff;
+}
+.recommend_list ul li {
+  font-weight: 400;
+  font-size: 16px;
+  color: #222;
+  position: relative;
+  margin-bottom: 16px;
+  text-align: left;
+  position: relative;
+  margin-left: 40px;
+  word-break: keep-all;
+}
+.recommend_list ul li::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(/pc/cnp/images/special-clinic/clinic_ptt__check_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 52%;
+  left: -40px;
+}
+.recommend_list.type02 li::before {
+  width: 25px;
+  height: 25px;
+  background-image: url(/pc/cnp/images/special-clinic/clinic_ptt__check_icon.png);
 }
 
 .clinic_notice_list {
@@ -582,4 +606,28 @@
 }
 .mens_program_process .clinic_inner ul li .badge {
   margin-bottom: 20px;
+}
+
+/*holiday*/
+.holiday_bx .clinic_inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.holiday_bx .clinic_inner .img_bx {
+  width: 140px;
+  margin-bottom: 20px;
+}
+.holiday_bx .clinic_inner .txt_bx {
+  width: 100%;
+}
+.holiday_bx .clinic_inner .txt_bx .badge {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+.holiday_bx .clinic_inner + .clinic_inner {
+  margin-top: 20px;
 }/*# sourceMappingURL=clinic2.css.map */
