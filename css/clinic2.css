@@ -328,6 +328,9 @@
 .recommend_bx.laser_bx {
   gap: 120px;
 }
+.recommend_bx.justify-left {
+  justify-content: flex-start;
+}
 
 .recommend_list ul {
   background-color: #fff;
