@@ -91,7 +91,7 @@
         position: relative;
         margin: 0 auto;
         width: fit-content;
-        letter-spacing: 7px;
+        letter-spacing: 6px;
         text-align: center;
         font-weight: 500;
     }
@@ -155,6 +155,7 @@
         color: #000;
         text-align: center;
         position: relative;
+        line-height: 1.4;
     }
     .clinic_editor_img{
         margin: 12px 0;
@@ -398,3 +399,111 @@
         font-size: 12px;
         line-height: 1.5;
     }
+    
+    /* 기미 레이저 */
+    .clinic_side_title{
+        position: relative;
+        font-size: 15px;
+        color: #222;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 auto;
+        width: fit-content;
+        margin-bottom: 10px;
+    }
+    .nonmon_box{
+        padding: 15px;
+        background-color: #f9f9f9;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .nonmon_box h6{
+        font-size: 16px;
+        color: #000;
+        font-weight: 500;
+    }
+    .nonmon_box p{
+        font-size: 14px;
+        font-weight: 300;
+        color: #666;
+        padding: 10px 0;
+    }
+    .nonmon_box .description{
+        font-size: 12px;
+        font-weight: 300;
+        color: #3d3d3d;
+        text-align: center;
+        padding: 0;
+        line-height: 1.5;
+    }
+    .nonmon_box img{
+        margin-top: 15px;
+    }
+    .border_box_wrap{
+        border: 15px solid #f9f9f9;
+    }
+    .border_box_wrap .ck_list{
+        background: #fff;
+        padding: 15px;
+    }
+    .border_box_wrap .list{
+        display: flex;
+        align-items: flex-start;
+        column-gap: 10px;
+        margin-bottom: 15px;
+    }
+    .border_box_wrap .list:last-child{
+        margin-bottom: 0;
+    }
+    .border_box_wrap .list img{
+        margin-top: 5px;
+    }
+    .border_box_wrap .list p{
+        font-size: 14px;
+        color: #222;
+        text-align: left;
+    }
+    .professinal_box_wrap{
+        background: #f9f9f9;
+        padding-top: 15px;
+    }
+    .professinal_box_wrap > p{
+        font-size: 14px;
+        color: #222;
+    }
+    
+    /* 색소 */
+    .img_desc{
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .img_desc p{
+        margin-bottom: 5px;
+    }
+    .img_desc p span{
+        color: #000;
+    }
+    .high_why_wrap .wrap2{
+        flex-direction: column;
+    }
+    .high_why_wrap .wrap2 .list{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        margin-bottom: 10px;
+    }
+    .high_why_wrap .wrap2 .list p{
+        text-align: left;
+        margin-top: 0;
+    }
+    .high_why_wrap .wrap2 .list .clinic_title_desc{
+        margin-top: 5px;
+    }
+    .high_why_wrap .wrap2 .list img{
+        width: 70px;
+        margin: 0;
+    }
+    

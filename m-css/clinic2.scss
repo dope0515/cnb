@@ -11,7 +11,61 @@
         padding: 20px;
     }
 }
-
+.padding_bx40 {
+    padding: 20px;
+}
+.clinic_editor_sub_title {
+    .clinic_date {
+        font-size: 36px;
+        color: #898989;
+        font-style: italic;
+        margin-right: 20px;
+    }
+}
+.clinic_talk_bx {
+    position: relative;
+    .txt_bx {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        background-color: rgba(255,255,255,0.9);
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top:50%;
+        left: 50%;
+        padding: 10px 4px;
+        p {
+            font-size: 11px;
+            color: #313131;
+            span {
+                display: block;
+                position: relative;
+                &::before, &::after {
+                    content: '';
+                    width: 9px;
+                    height: 8px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    display: inline-block;
+                }
+                &::before {
+                    background-image: url(/pc/cnp/images/special-clinic/icon_ldquo.png);
+                    margin-right: 4px;
+                    vertical-align: 4px;
+                }
+                &::after {
+                    background-image: url(/pc/cnp/images/special-clinic/icon_rdquo.png);
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+}
+.clinic_font_bold {
+    font-weight: 700 !important;
+}
 .clinic_badge_wrap {
     display: flex;
     flex-direction: column;
@@ -38,12 +92,22 @@
         }
     }
 }
+.clinic_flex_bx {
+    display: flex;
+    &.align_center {
+        align-items: center;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+}
 .badge {
     font-size: 16px;
     font-weight: 700;
     border-radius: 35px;
     padding: 6px;
-    width: 60%;
+    width: fit-content;
+    padding: 8px 30px;
     &.y {
         color: #000;
         background-color: #ffb400;
@@ -68,15 +132,19 @@
     word-break: keep-all;
     .clinic_title_desc_point {font-weight: 700;}
 }
-
+.clinic_title_sub {
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+}
 .clinic_subtitle {display: inline-block;font-weight: 700; font-size: 18px; color: #000;}
 
 .clinic_title_bracket {
-    font-weight: 500; font-size: 16px; color: #222; letter-spacing: -0.02em; width: fit-content; position: relative;margin: 40px auto; word-break: keep-all;
+    font-weight: 500; font-size: 16px; color: #222; letter-spacing: -0.02em; width: fit-content; position: relative; margin: 20px auto; word-break: keep-all;
     &.long {
         max-width: 900px;
         width: 100%;
-        padding: 0 20px;
+        margin: 20px auto;
     }
 }
 
@@ -153,15 +221,15 @@
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    padding: 30px 30px 50px;
+    padding: 30px;
     strong {
         font-weight: 300; 
-        font-size: 20px; 
+        font-size: 24px; 
         letter-spacing: -0.05em; 
         color: #000;
         span {
             font-weight: 500; 
-            font-size: 20px; 
+            font-size: 24px; 
             letter-spacing: -0.05em;
         }
     }
@@ -204,6 +272,23 @@
         ul {
             justify-content: center;
             li {width: calc(100% / 4 - 15px);}
+        }
+    }
+    &.filler {
+        ul {
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 10px;
+            li {
+                width: auto;
+                display: flex;
+                align-items: center;
+                text-align: left;
+                gap: 10px;
+                .img_bx {
+                    margin: unset;
+                }
+            }
         }
     }
 }
@@ -311,7 +396,17 @@
                 }
             }
         }
-    }  
+    } 
+    &.w_50 {
+        ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            li {
+                width: 100%;
+            }
+        }
+    } 
 }
 
 .clinic_notice_list {
@@ -462,11 +557,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        .txt_bx {
-        }
-        .clinic_notice_list {
 
-        }
     }
 }
 
@@ -615,6 +706,293 @@
         }
         & + .clinic_inner {
             margin-top: 20px;
+        }
+    }
+}
+
+.adolescent_bx {
+    .clinic_flex_bx {
+        .txt_bx {
+            strong {
+                display: inline-block;
+                font-weight: 700;
+                font-size: 16px;
+                color: #000;
+            }
+        }
+        &.type01 {
+            flex-direction: column;
+            .img_bx {
+                width: 70%;
+            }
+            .txt_bx {
+                width: 100%;
+                margin-top: 10px;
+                strong {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &.type02 {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px 50px;
+            li {
+                width: calc(100% / 2 - 25px);
+                position: relative;
+                .txt_bx {
+                    strong {
+                        margin-top: 4px;
+                    }
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    background-image: url(/pc/cnp/images/special-clinic/plus_icon4.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: absolute;
+                    transform: translateY(-50%);
+                    top: calc(50% - 12px);
+                    left: -30px;
+                }
+                &:first-child {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.type03 {
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            li {
+                width: calc(100% / 2 - 40px);
+            }
+        }
+    }
+}
+
+/*step_stone*/
+.step_stone_process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    >div{
+        .badge {
+            font-size: 12px;
+            color: #fff;
+            padding: 8px 20px;
+        }
+        &:nth-child(1) {
+            width: 100%;
+            .badge {
+                width: 100%;
+            }
+            img {
+                width: 24px;
+                margin: 20px auto;
+            }
+        }
+        &:nth-child(2) {
+            img {
+                width: 30px;
+                margin: 20px auto;
+            }
+        }
+        &:nth-child(3) {
+            width: 270px;
+            .txt_bx {
+                display: flex;
+                flex-direction: column;
+                width: 210px;
+                height: 210px;
+                color: #fff;
+                background-color: #000;
+                border-radius: 50%;
+                margin: 0 auto;
+                padding: 30px;
+                strong {
+                    display: inline-block;
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+.step_stone_bx {
+    .clinic_flex_bx {
+        &.type01 {
+            gap: 10px;
+            flex-wrap: wrap;
+            max-width: 380px;
+            margin: 0 auto;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                color: #000;
+                line-height: 1.25;
+                width: 90px;
+                height: 90px;
+                border: 4px solid #ffb400;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+.step_stone_cross {
+    margin: 40px auto 30px;
+    .clinic_flex_bx {
+        li {
+            width: 260px;
+            .badge {
+                width: 100%;
+            }
+            &:nth-child(2) {
+                width: 56px;
+                margin: 0 8px;
+                img {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+/*filler*/
+.filler_bx {
+    .clinic_flex_bx {
+        &.type01 {
+            gap: 10px;
+            margin: 0 auto;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                color: #000;
+                line-height: 1.25;
+                width: 90px;
+                height: 90px;
+                border: 4px solid #ffb400;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+.filler_cross {
+    margin: 40px auto 30px;
+    .clinic_flex_bx {
+        li {
+            width: 260px;
+            .badge {
+                width: 100%;
+            }
+            &:nth-child(2) {
+                width: 56px;
+                margin: 0 8px;
+                img {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+.half_bx {
+    .clinic_inner{
+        display: flex;
+        align-items: center;
+        .img_bx {
+            width: 40%;
+            align-self: flex-end;
+        }
+        .txt_bx {
+            width: 60%;
+            text-align: left;
+            strong {
+                display: inline-block;
+                font-size: 14px;
+                margin-bottom: 30px;
+                color: #000;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+.filler_process {
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 0;
+        li {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 0 6px;
+            .txt_bx {
+                strong {
+                    display: inline-block;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #222;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+            &::after {
+                content: '';
+                display: block;
+                width: 6px;
+                height: 10px;
+                background-image: url(/pc/cnp/images/special-clinic/arrow_right2.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                right: -10px;
+            }
+            &:nth-child(even) {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.filler_list {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li {
+            width: 100%;
+            .badge {
+                width: 100%;
+                margin: 0 auto 14px;
+            }
         }
     }
 }
