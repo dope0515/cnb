@@ -6,7 +6,14 @@
         box-sizing: border-box;
     }
 }
+.clinic_title_text {
+    line-height: 1.25;
+    & + .clinic_title_name {
+        margin-bottom: 35px;
+    }
+}
 .clinic_editor_sub_title {
+    letter-spacing: -0.05em;
     .clinic_date {
         font-size: 80px;
         color: #898989;
@@ -22,10 +29,16 @@
 .clinic_txt_white {
     color: #fff !important;
 }
+.clinic_txt_black {
+    color: #000 !important;
+}
 .clinic_font_bold {
     font-weight: 700 !important;
 }
-.clinic_title_name span {letter-spacing: 0;}
+.clinic_font_regular {
+    font-weight: 400 !important;
+}
+.clinic_title_name span {letter-spacing: 0; font-weight: 500;line-height: 1.25;}
 .transparent_circle {
     ul {
         display: flex;
@@ -48,6 +61,9 @@
                 color: #fff;
                 background-color: rgba(0,0,0,0.8);
                 z-index: 1;
+            }
+            &:last-child {
+                margin-right: 0;
             }
         }
     }
@@ -100,7 +116,6 @@
     border: 40px solid #f9f9f9; box-sizing: border-box;
     .clinic_inner {
         background-color: #fff;
-        padding: 50px;
     }
 }
 .padding_bx40 {
@@ -127,6 +142,89 @@
     &.justify-center {
         justify-content: center;
     }
+    &.d-day {
+        &.type01 {
+            justify-content: space-between;
+            .txt_bx {
+                &::before, &::after {
+                    content: '';
+                    width: 21px;
+                    height: 19px;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    display: block;
+                    margin: 0 auto;
+                }
+                &::before {
+                    background-image: url(/pc/cnp/images/special-clinic/d-day_icon_ldquo.png);
+                    margin-bottom: 20px;
+                }
+                &::after {
+                    background-image: url(/pc/cnp/images/special-clinic/d-day_icon_rdquo.png);
+                    margin-top: 20px;
+                }
+            }
+        }
+        &.type02 {
+            gap: 140px;
+            li {
+                .img_bx {
+                    margin-bottom: 16px;
+                }
+                .txt_bx {
+                    strong {
+                        display: inline-block;
+                        color: #222;
+                        margin-bottom: 8px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+        &.type03 {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 66px;
+            li {
+                width: calc(100% / 3 - 44px);
+                position: relative;
+                &::after {
+                    content: '';
+                    width: 12px;
+                    height: 20px;
+                    background-image: url(/pc/cnp/images/special-clinic/arrow_right2.png);
+                    background-size: 12px 20px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    transform: translateY(-50%);
+                    top: calc(50% - 18px);
+                    right: -40px;
+                }
+                .txt_bx {
+                    font-size: 16px;
+                    margin-top: 14px;
+                    strong {
+                        display: inline-block;
+                        color: #222;
+                    }
+                }
+                &:nth-child(3),&:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.type04 {
+            justify-content: center;
+            gap: 78px;
+        }
+    }
 }
 .badge {
     font-size: 18px;
@@ -152,6 +250,11 @@
     font-size: 28px;
     font-weight: 500;
     color: #000;
+}
+.title18 {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
 }
 
 .clinic_title_desc {
@@ -197,7 +300,9 @@
         }
     }
     &.long {
+        min-width: 820px;
         width: fit-content;
+        line-height: 1.25;
         padding: 0 20px;
         &::before {
             content: '';
@@ -281,6 +386,7 @@
                 height: 170px;
                 font-weight: 700;
                 font-size: 22px;
+                line-height: 1.25;
                 color: #fff;
                 border-radius: 50%;
                 padding: 20px;
@@ -293,7 +399,7 @@
                 background-image: url(/pc/cnp/images/special-clinic/clinic_ptt_plus.png);
                 background-repeat: no-repeat;
                 background-size: cover;
-                margin: 0 20px;
+                margin: 0 35px;
             }
             &:last-child {
                 &::after {
@@ -458,7 +564,7 @@
                 height: 25px;
                 background-image: url(/pc/cnp/images/special-clinic/clinic_ptt__check_icon.png);
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 25px 25px;
                 transform: translateY(-50%);
                 position: absolute;
                 top: 52%;
@@ -487,6 +593,7 @@
                 align-items: center;
                 justify-content: center;
                 gap: 4px;
+                margin-left: 0;
                 &::before {
                     position: static;
                     transform: translateY(0);
@@ -622,7 +729,7 @@
             justify-content: center;
             width: 110px;
             height: 110px;
-            border: 4px solid #ffb400;
+            border: 5px solid #ffb400;
             border-radius: 50%;
             font-weight: 500;
             font-size: 16px;
@@ -639,6 +746,9 @@
     >div {
         display: flex;
         align-items: center;
+        .img_bx {
+            margin-bottom: 20px;
+        }
         .txt_bx {
             width: 30%;
         }
@@ -933,7 +1043,7 @@
                 color: #000;
                 width: 110px;
                 height: 110px;
-                border: 4px solid #ffb400;
+                border: 6px solid #ffb400;
                 border-radius: 50%;
             }
         }
@@ -949,9 +1059,7 @@
             }
             &:nth-child(2) {
                 width: 56px;
-                img {
-                    transform: rotate(45deg);
-                }
+                margin: 0 20px;
             }
         }
     }
@@ -962,6 +1070,7 @@
 .filler_bx {
     .clinic_flex_bx {
         &.type01 {
+            
             gap: 20px;
             li {
                 display: flex;

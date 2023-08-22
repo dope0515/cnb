@@ -4,8 +4,14 @@
   word-break: keep-all;
 }
 
+.clinic_title_name {
+  line-height: 1.25;
+}
+
 .clinic_title_name span {
   letter-spacing: 0;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .center_bx {
@@ -26,7 +32,6 @@
 }
 .border_bx40 .clinic_inner {
   background-color: #fff;
-  padding: 20px;
 }
 
 .padding_bx40 {
@@ -82,8 +87,40 @@
   margin-left: 4px;
 }
 
+.clinic_txt_white {
+  color: #fff !important;
+}
+
 .clinic_font_bold {
   font-weight: 700 !important;
+}
+
+.transparent_circle ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.transparent_circle ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  color: #000;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffb400;
+  margin-right: -18px;
+  position: relative;
+}
+.transparent_circle ul li:nth-child(even) {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+.transparent_circle ul li:last-child {
+  margin-right: 0;
 }
 
 .clinic_badge_wrap {
@@ -116,12 +153,113 @@
 
 .clinic_flex_bx {
   display: flex;
+  flex-direction: column;
 }
 .clinic_flex_bx.align_center {
   align-items: center;
 }
 .clinic_flex_bx.justify-center {
   justify-content: center;
+}
+.clinic_flex_bx.d-day {
+  flex-direction: column;
+}
+.clinic_flex_bx.d-day.type01 {
+  justify-content: space-between;
+}
+.clinic_flex_bx.d-day.type01 .img_bx {
+  margin-bottom: 20px;
+}
+.clinic_flex_bx.d-day.type01 .txt_bx::before, .clinic_flex_bx.d-day.type01 .txt_bx::after {
+  content: "";
+  width: 16px;
+  height: 14px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+.clinic_flex_bx.d-day.type01 .txt_bx::before {
+  background-image: url(/pc/cnp/images/special-clinic/d-day_icon_ldquo.png);
+  margin-bottom: 10px;
+}
+.clinic_flex_bx.d-day.type01 .txt_bx::after {
+  background-image: url(/pc/cnp/images/special-clinic/d-day_icon_rdquo.png);
+  margin-top: 10px;
+}
+.clinic_flex_bx.d-day.type02 li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.clinic_flex_bx.d-day.type02 li .img_bx {
+  width: 60px;
+  margin-bottom: 16px;
+}
+.clinic_flex_bx.d-day.type02 li .txt_bx {
+  width: calc(100% - 70px);
+  text-align: left;
+}
+.clinic_flex_bx.d-day.type02 li .txt_bx strong {
+  display: inline-block;
+  color: #222;
+}
+.clinic_flex_bx.d-day.type02 li .txt_bx p {
+  font-size: 14px;
+}
+.clinic_flex_bx.d-day.type03 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.clinic_flex_bx.d-day.type03 li {
+  width: calc(50% - 15px);
+  position: relative;
+}
+.clinic_flex_bx.d-day.type03 li::after {
+  content: "";
+  width: 6px;
+  height: 10px;
+  background-image: url(/pc/cnp/images/special-clinic/arrow_right2.png);
+  background-size: 6px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: translateY(-50%);
+  top: calc(50% - 18px);
+  right: -18px;
+}
+.clinic_flex_bx.d-day.type03 li .txt_bx {
+  font-size: 16px;
+  margin-top: 4px;
+}
+.clinic_flex_bx.d-day.type03 li .txt_bx strong {
+  display: inline-block;
+  font-size: 14px;
+  color: #222;
+}
+.clinic_flex_bx.d-day.type03 li .txt_bx p {
+  font-weight: 500;
+  font-size: 12px;
+}
+.clinic_flex_bx.d-day.type03 li:nth-child(even)::after {
+  display: none;
+}
+.clinic_flex_bx.d-day.type03 li:last-child::after {
+  left: -18px;
+}
+.clinic_flex_bx.d-day.type04 {
+  flex-direction: row;
+  justify-content: center;
+}
+.clinic_flex_bx.d-day.type04 li:not(:nth-child(2)) {
+  width: calc(50% - 40px);
+}
+.clinic_flex_bx.d-day.type04 li:nth-child(2) {
+  margin: 0 20px;
+  width: 20px;
 }
 
 .badge {
@@ -131,7 +269,7 @@
   padding: 6px;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 8px 30px;
+  padding: 8px 20px;
 }
 .badge.y {
   color: #000;
@@ -303,11 +441,17 @@
   font-size: 12px;
   line-height: 1.25;
 }
+.ptt_better.mens {
+  padding: 30px 8px;
+}
 .ptt_better.mens ul {
-  gap: 40px 20px;
+  gap: 40px 10px;
 }
 .ptt_better.mens ul li {
   width: calc(33.3333333333% - 20px);
+}
+.ptt_better.mens ul li .txt_bx p {
+  font-size: 12px;
 }
 .ptt_better.holiday ul {
   justify-content: center;
@@ -329,6 +473,14 @@
 }
 .ptt_better.filler ul li .img_bx {
   margin: unset;
+}
+.ptt_better.d-day {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.ptt_better.d-day ul {
+  flex-wrap: nowrap;
+  gap: 0;
 }
 
 .ptt_table tbody tr td {
@@ -439,14 +591,27 @@
 }
 .recommend_list.type02 ul li {
   padding-left: 30px;
+  font-weight: 500;
+  color: #666;
 }
 .recommend_list.type02 ul li::before {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background-image: url(/pc/cnp/images/special-clinic/icon_check2.png);
   transform: translateY(0);
   top: 4px;
   left: 0px;
+}
+.recommend_list.type02.center li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding-left: 0;
+}
+.recommend_list.type02.center li::before {
+  position: static;
+  transform: translateY(0);
 }
 .recommend_list.w_50 ul {
   display: flex;
@@ -523,6 +688,8 @@
   font-size: 14px;
   color: #222;
   text-align: left;
+  position: relative;
+  left: 20px;
 }
 .drt_history .list_bx ul li .tit::before {
   content: "";
@@ -531,7 +698,10 @@
   height: 0;
   border-top: 2px dotted #ffb400;
   vertical-align: 3px;
-  margin-right: 10px;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: -18px;
 }
 .drt_history .list_bx ul li .tit .des {
   font-size: 12px;
@@ -575,7 +745,7 @@
 }
 
 .drt_list_wrap {
-  padding: 30px 0px;
+  padding: 20px 0px;
 }
 .drt_list_wrap ul {
   display: flex;
@@ -585,7 +755,7 @@
   -moz-column-gap: 12px;
        column-gap: 12px;
   max-width: 350px;
-  margin: 20px auto 25px;
+  margin: 20px auto;
 }
 @media screen and (max-width: 340px) {
   .drt_list_wrap ul {
@@ -645,7 +815,7 @@
   width: 60px;
   height: 60px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 .mens_vs .mens_vs_inner .txt_bx {
   margin-bottom: 20px;
@@ -673,12 +843,13 @@
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 16px;
-  width: 105px;
-  height: 105px;
-  border: 5px solid #dadada;
+  font-size: 12px;
+  line-height: 1.2;
+  width: 80px;
+  height: 80px;
+  border: 4px solid #dadada;
   border-radius: 50%;
-  padding: 10px;
+  padding: 6px;
   box-sizing: border-box;
   position: relative;
   transition: all 0.3s ease;
@@ -695,10 +866,13 @@
   height: 7px;
   bottom: 12px;
 }
+.mens_vs .mens_vs_inner ul.n_wrap {
+  flex-wrap: nowrap;
+}
 .mens_vs .mens_vs_inner > div {
   width: 100%;
   background-color: #fff;
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 
 .mens_program_process .badge {
@@ -763,7 +937,7 @@
 .adolescent_bx .clinic_flex_bx .txt_bx strong {
   display: inline-block;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   color: #000;
 }
 .adolescent_bx .clinic_flex_bx.type01 {
@@ -781,12 +955,13 @@
 }
 .adolescent_bx .clinic_flex_bx.type02 {
   width: 100%;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 14px 50px;
+  gap: 14px 30px;
 }
 .adolescent_bx .clinic_flex_bx.type02 li {
-  width: calc(50% - 25px);
+  width: calc(50% - 15px);
   position: relative;
 }
 .adolescent_bx .clinic_flex_bx.type02 li .txt_bx strong {
@@ -803,19 +978,20 @@
   position: absolute;
   transform: translateY(-50%);
   top: calc(50% - 12px);
-  left: -30px;
+  left: -20px;
 }
 .adolescent_bx .clinic_flex_bx.type02 li:first-child::before {
   display: none;
 }
 .adolescent_bx .clinic_flex_bx.type03 {
   width: 100%;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
 }
 .adolescent_bx .clinic_flex_bx.type03 li {
-  width: calc(50% - 40px);
+  width: calc(50% - 20px);
 }
 
 /*step_stone*/
@@ -890,6 +1066,9 @@
 .step_stone_cross {
   margin: 40px auto 30px;
 }
+.step_stone_cross .clinic_flex_bx {
+  flex-direction: row;
+}
 .step_stone_cross .clinic_flex_bx li {
   width: 260px;
 }
@@ -900,12 +1079,10 @@
   width: 56px;
   margin: 0 8px;
 }
-.step_stone_cross .clinic_flex_bx li:nth-child(2) img {
-  transform: rotate(45deg);
-}
 
 /*filler*/
 .filler_bx .clinic_flex_bx.type01 {
+  flex-direction: row;
   gap: 10px;
   margin: 0 auto;
 }
@@ -916,10 +1093,16 @@
   font-weight: 500;
   color: #000;
   line-height: 1.25;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border: 4px solid #ffb400;
   border-radius: 50%;
+}
+@media screen and (max-width: 370px) {
+  .filler_bx .clinic_flex_bx.type01 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .filler_cross {
@@ -942,23 +1125,27 @@
 .half_bx .clinic_inner {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .half_bx .clinic_inner .img_bx {
-  width: 40%;
-  align-self: flex-end;
+  width: 100%;
+  margin-bottom: 18px;
 }
 .half_bx .clinic_inner .txt_bx {
-  width: 60%;
-  text-align: left;
+  width: 100%;
 }
 .half_bx .clinic_inner .txt_bx strong {
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 30px;
   color: #000;
 }
 .half_bx .clinic_inner .txt_bx p {
   font-size: 12px;
+}
+.half_bx.flex_direction_row .clinic_inner {
+  flex-direction: row;
 }
 
 .filler_process ul {
@@ -1014,4 +1201,49 @@
 .filler_list ul li .badge {
   width: 100%;
   margin: 0 auto 14px;
+}
+
+/*d-day*/
+.d-day_plan {
+  margin-bottom: 35px;
+}
+.d-day_plan ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 320px;
+  gap: 4px;
+  margin: 0 auto;
+}
+.d-day_plan ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: #222;
+  width: 90px;
+  height: 90px;
+  border: 4px solid #ffb400;
+  border-radius: 50%;
+  position: relative;
+}
+.d-day_plan ul li::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  background-image: url(/pc/cnp/images/special-clinic/d-day_icon_ldquo.png);
+  background-size: 16px 15px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  transform: translateX(-50%);
+  position: absolute;
+  padding: 5px 10px;
+  top: -20px;
+  left: 50%;
+}
+.d-day_plan ul li:nth-child(even) {
+  border-color: #dadada;
 }/*# sourceMappingURL=clinic2.css.map */
