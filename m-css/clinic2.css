@@ -123,6 +123,24 @@
   margin-right: 0;
 }
 
+.clinic_y_circle ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clinic_y_circle ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #222;
+  width: 90px;
+  height: 90px;
+  border: 6px solid #ffb400;
+  border-radius: 50%;
+}
+
 .clinic_badge_wrap {
   display: flex;
   flex-direction: column;
@@ -233,7 +251,6 @@
 }
 .clinic_flex_bx.d-day.type03 li .txt_bx {
   font-size: 16px;
-  margin-top: 4px;
 }
 .clinic_flex_bx.d-day.type03 li .txt_bx strong {
   display: inline-block;
@@ -260,6 +277,47 @@
 .clinic_flex_bx.d-day.type04 li:nth-child(2) {
   margin: 0 20px;
   width: 20px;
+}
+.clinic_flex_bx.healing.type01 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.clinic_flex_bx.healing.type01 li {
+  width: calc(50% - 15px);
+  position: relative;
+}
+.clinic_flex_bx.healing.type01 li::after {
+  content: "";
+  width: 6px;
+  height: 10px;
+  background-image: url(/pc/cnp/images/special-clinic/arrow_right2.png);
+  background-size: 6px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  transform: translateY(-50%);
+  top: calc(50% - 18px);
+  right: -18px;
+}
+.clinic_flex_bx.healing.type01 li .txt_bx {
+  font-size: 16px;
+}
+.clinic_flex_bx.healing.type01 li .txt_bx strong {
+  display: inline-block;
+  font-size: 14px;
+  color: #222;
+}
+.clinic_flex_bx.healing.type01 li .txt_bx p {
+  font-weight: 500;
+  font-size: 12px;
+}
+.clinic_flex_bx.healing.type01 li:nth-child(even)::after {
+  display: none;
+}
+.clinic_flex_bx.healing.type01 li:last-child::after {
+  left: -18px;
 }
 
 .badge {
@@ -326,6 +384,104 @@
   max-width: 900px;
   width: 100%;
   margin: 20px auto;
+}
+
+.clinic_qna {
+  text-align: left;
+  word-break: keep-all;
+  background-color: #fff;
+}
+.clinic_qna ul li {
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+}
+.clinic_qna ul li .qna_tit {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+}
+.clinic_qna ul li .qna_tit strong {
+  width: calc(100% - 38px);
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+}
+.clinic_qna ul li .qna_tit::before {
+  content: "";
+  width: 18px;
+  height: 22px;
+  background-image: url(/pc/cnp/images/special-clinic/icon_q.png);
+  background-size: 18px 22px;
+  display: block;
+  margin-right: 8px;
+}
+.clinic_qna ul li .qna_desc {
+  padding: 10px 20px;
+}
+.clinic_qna ul li:last-child {
+  margin-bottom: 0;
+}
+
+.clinic_review .review_tit {
+  margin-bottom: 35px;
+}
+.clinic_review .review_tit strong {
+  font-weight: 700;
+  font-size: 18px;
+  color: #222;
+}
+.clinic_review .review_tit p {
+  font-size: 16px;
+  margin-top: 16px;
+}
+.clinic_review ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+.clinic_review ul li {
+  width: 100%;
+}
+.clinic_review ul li .desc {
+  font-size: 16px;
+  line-height: 28px;
+  background-color: #fff;
+  padding: 25px 10px;
+}
+.clinic_review ul li .desc p {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.clinic_review ul li .desc p span {
+  display: inline-block;
+  position: relative;
+}
+.clinic_review ul li .desc p span::after, .clinic_review ul li .desc p span::before {
+  content: "";
+  width: 10px;
+  height: 19px;
+  background-size: 10px 19px;
+  position: absolute;
+  top: 0;
+}
+.clinic_review ul li .desc p span::before {
+  background-image: url(/pc/cnp/images/special-clinic/icon_lsquo.png);
+  left: -20px;
+}
+.clinic_review ul li .desc p span::after {
+  background-image: url(/pc/cnp/images/special-clinic/icon_rsquo.png);
+  right: -20px;
+}
+.clinic_review ul li .item {
+  font-weight: 700;
+  font-size: 18px;
+  color: #222;
+  background-color: #ffb400;
+  padding: 12.5px 10px;
 }
 
 .clinic_table table {
@@ -437,7 +593,7 @@
   align-items: center;
   justify-content: center;
 }
-.ptt_better ul li .img_bx .txt_bx p {
+.ptt_better ul li .txt_bx p {
   font-size: 12px;
   line-height: 1.25;
 }
@@ -482,6 +638,12 @@
   flex-wrap: nowrap;
   gap: 0;
 }
+.ptt_better.healing ul {
+  gap: 20px 10px;
+}
+.ptt_better.healing ul li {
+  width: calc(33.3333333333% - 7px);
+}
 
 .ptt_table tbody tr td {
   height: 30px;
@@ -519,7 +681,7 @@
   width: 50%;
 }
 .clininc_recommend .list_bx {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .clininc_recommend .list_bx ul {
   background-color: #fff;
@@ -534,6 +696,7 @@
   position: relative;
   margin-left: 40px;
   word-break: keep-all;
+  padding-left: 0;
 }
 .clininc_recommend .list_bx ul li::before {
   content: "";
