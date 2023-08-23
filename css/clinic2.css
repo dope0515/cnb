@@ -23,12 +23,57 @@
   margin-right: 50px;
 }
 
+.clinic_comment {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+.clinic_comment span {
+  position: relative;
+}
+.clinic_comment span::after, .clinic_comment span::before {
+  content: "";
+  width: 10px;
+  height: 19px;
+  background-size: 10px 19px;
+  position: absolute;
+  top: 0;
+}
+.clinic_comment span::before {
+  background-image: url(/pc/cnp/images/special-clinic/icon_lsquo.png);
+  left: -20px;
+}
+.clinic_comment span::after {
+  background-image: url(/pc/cnp/images/special-clinic/icon_rsquo.png);
+  right: -20px;
+}
+
+.check_tit {
+  display: block;
+  font-weight: 300;
+  font-size: 30px;
+  color: #222;
+}
+.check_tit::before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-image: url(/pc/cnp/images/special-clinic/clinic_ptt__check_icon.png);
+  margin-bottom: 10px;
+}
+
 .clinic_txt_white {
   color: #fff !important;
 }
 
 .clinic_txt_black {
   color: #000 !important;
+}
+
+.clinic_txt_black2 {
+  color: #222 !important;
 }
 
 .clinic_font_bold {
@@ -73,6 +118,88 @@
   margin-right: 0;
 }
 
+.clinic_gray_circle.type01 > ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.clinic_gray_circle.type01 > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 255px;
+  height: 255px;
+  border: 3px solid #ccc;
+  border-radius: 50%;
+}
+.clinic_gray_circle.type01 > ul > li .txt_bx strong {
+  font-weight: 500;
+  font-size: 22px;
+  color: #000;
+  position: relative;
+}
+.clinic_gray_circle.type01 > ul > li .txt_bx strong::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: #f19500;
+  margin: 10px auto;
+}
+.clinic_gray_circle.type01.wedding > ul > li:nth-child(1) {
+  background-image: url(/pc/cnp/images/special-clinic/clinic_wedding_1.png);
+}
+.clinic_gray_circle.type01.wedding > ul > li:nth-child(2) {
+  background-image: url(/pc/cnp/images/special-clinic/clinic_wedding_2.png);
+}
+.clinic_gray_circle.type01.wedding > ul > li:nth-child(3) {
+  background-image: url(/pc/cnp/images/special-clinic/clinic_wedding_3.png);
+}
+.clinic_gray_circle.type02 ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.clinic_gray_circle.type02 ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  width: 105px;
+  height: 105px;
+  border: 5px solid #dadada;
+  border-radius: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.clinic_gray_circle.type02 ul li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(/pc/cnp/images/special-clinic/btn_arrow.png);
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 7px;
+  bottom: 14px;
+  left: 50%;
+  margin-left: -17px;
+  transition: 400ms all;
+}
+.clinic_gray_circle.type02 ul li a:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+.clinic_gray_circle.type02 ul li a:hover::after {
+  margin-left: -11px;
+}
+
 .clinic_y_circle ul {
   display: flex;
   align-items: center;
@@ -89,6 +216,125 @@
   height: 110px;
   border: 8px solid #ffb400;
   border-radius: 50%;
+}
+
+.point_list li span {
+  display: inline-block;
+  font-weight: 350;
+  font-size: 16px;
+  position: relative;
+  margin-left: 10px;
+}
+.point_list li span::before {
+  content: "";
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 12px;
+  left: -10px;
+}
+.point_list.gray li {
+  color: #444;
+}
+.point_list.gray li span::before {
+  background-color: #444;
+}
+.point_list.yellow li {
+  color: #444;
+}
+.point_list.yellow li span::before {
+  background-color: #ffb400;
+}
+
+.clinic_process_list {
+  display: flex;
+  align-items: center;
+}
+.clinic_process_list > li {
+  background-color: #fff;
+  position: relative;
+}
+.clinic_process_list > li .badge {
+  margin: 0 auto 20px;
+  color: #fff;
+}
+.clinic_process_list > li::after {
+  content: "";
+  width: 20px;
+  height: 24px;
+  background-image: url(/pc/cnp/images/special-clinic/arrow_right3.png);
+  background-size: 20px 24px;
+  transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  right: -25px;
+}
+.clinic_process_list > li:last-child::after {
+  display: none;
+}
+.clinic_process_list.division03 {
+  gap: 30px;
+}
+.clinic_process_list.division03 > li {
+  width: 33.3333333333%;
+  padding: 30px 40px;
+  text-align: left;
+}
+.clinic_process_list.division03 > li:nth-child(1) .badge {
+  background-color: #000;
+}
+.clinic_process_list.division03 > li:nth-child(2) .badge {
+  background-color: #4e4e4e;
+}
+.clinic_process_list.division03 > li:nth-child(3) .badge {
+  background-color: #7a7a7a;
+}
+
+.recycle_bx ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+.recycle_bx ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-height: 160px;
+  color: #000;
+}
+.recycle_bx ul li:nth-child(1) {
+  background-color: #ffb400;
+}
+.recycle_bx ul li:nth-child(2) {
+  background-color: #fbd57b;
+}
+.recycle_bx ul li:nth-child(3) {
+  background-color: #fdbe28;
+}
+.recycle_bx ul li:nth-child(4) {
+  background-color: #fecc57;
+}
+.recycle_bx ul li strong {
+  font-weight: 900;
+  font-size: 18px;
+}
+.recycle_bx ul li p {
+  font-weight: 500;
+  font-size: 16px;
+}
+.recycle_bx ul::after {
+  content: "";
+  width: 58px;
+  height: 50px;
+  background-image: url(/pc/cnp/images/special-clinic/icon_recycle.png);
+  background-size: 58px 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 .center_bx {
@@ -288,6 +534,49 @@
 .clinic_flex_bx.healing.type01 li:nth-child(3)::after, .clinic_flex_bx.healing.type01 li:last-child::after {
   display: none;
 }
+.clinic_flex_bx.botox.type01, .clinic_flex_bx.wedding.type01 {
+  justify-content: center;
+  gap: 66px;
+}
+.clinic_flex_bx.botox.type01 li, .clinic_flex_bx.wedding.type01 li {
+  width: calc(25% - 44px);
+  position: relative;
+}
+.clinic_flex_bx.botox.type01 li .img_bx, .clinic_flex_bx.wedding.type01 li .img_bx {
+  position: relative;
+}
+.clinic_flex_bx.botox.type01 li .img_bx::after, .clinic_flex_bx.wedding.type01 li .img_bx::after {
+  content: "";
+  width: 12px;
+  height: 20px;
+  background-image: url(/pc/cnp/images/special-clinic/arrow_right2.png);
+  background-size: 12px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  right: -40px;
+}
+.clinic_flex_bx.botox.type01 li .txt_bx, .clinic_flex_bx.wedding.type01 li .txt_bx {
+  font-size: 16px;
+  margin-top: 14px;
+}
+.clinic_flex_bx.botox.type01 li .txt_bx strong, .clinic_flex_bx.wedding.type01 li .txt_bx strong {
+  display: inline-block;
+  color: #222;
+}
+.clinic_flex_bx.botox.type01 li:last-child .img_bx::after, .clinic_flex_bx.wedding.type01 li:last-child .img_bx::after {
+  display: none;
+}
+.clinic_flex_bx.botox.type02, .clinic_flex_bx.wedding.type02 {
+  align-items: center;
+}
+.clinic_flex_bx.botox.type02 > div, .clinic_flex_bx.wedding.type02 > div {
+  width: 50%;
+}
+.clinic_flex_bx.row_reverse {
+  flex-direction: row-reverse;
+}
 
 .badge {
   font-size: 18px;
@@ -309,6 +598,10 @@
 
 .bg_gray {
   background-color: #f9f9f9;
+}
+
+.bg_white {
+  background-color: #fff;
 }
 
 .title28 {
@@ -493,31 +786,31 @@
   font-size: 16px;
   line-height: 28px;
 }
-.clinic_review ul {
+.clinic_review > ul {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   width: 100%;
 }
-.clinic_review ul li {
+.clinic_review > ul > li {
   width: calc(33.3333333333% - 30px);
 }
-.clinic_review ul li .desc {
+.clinic_review > ul > li .desc {
   font-size: 16px;
   line-height: 28px;
   background-color: #fff;
   padding: 25px 10px;
 }
-.clinic_review ul li .desc p {
+.clinic_review > ul > li .desc p {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
 }
-.clinic_review ul li .desc p span {
+.clinic_review > ul > li .desc p span {
   display: inline-block;
   position: relative;
 }
-.clinic_review ul li .desc p span::after, .clinic_review ul li .desc p span::before {
+.clinic_review > ul > li .desc p span::after, .clinic_review > ul > li .desc p span::before {
   content: "";
   width: 10px;
   height: 19px;
@@ -525,25 +818,48 @@
   position: absolute;
   top: 0;
 }
-.clinic_review ul li .desc p span::before {
+.clinic_review > ul > li .desc p span::before {
   background-image: url(/pc/cnp/images/special-clinic/icon_lsquo.png);
   left: -20px;
 }
-.clinic_review ul li .desc p span::after {
+.clinic_review > ul > li .desc p span::after {
   background-image: url(/pc/cnp/images/special-clinic/icon_rsquo.png);
   right: -20px;
 }
-.clinic_review ul li .item {
+.clinic_review > ul > li .con_bx {
+  background-color: #fff;
+  padding: 25px 10px;
+}
+.clinic_review > ul > li .con_bx .recommend_list {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.clinic_review > ul > li .con_bx .recommend_list li {
+  margin-bottom: 8px;
+}
+.clinic_review > ul > li .con_bx + .con_bx {
+  border-top: 1px solid #ddd;
+}
+.clinic_review > ul > li .con_bx p {
+  font-size: 16px;
+  line-height: 1.75;
+}
+.clinic_review > ul > li .con_bx p strong {
+  font-weight: 500;
+  color: #000;
+}
+.clinic_review > ul > li .item {
   font-weight: 700;
   font-size: 18px;
   color: #222;
   background-color: #ffb400;
   padding: 12.5px 10px;
 }
-.clinic_review.division02 ul {
+.clinic_review.division02 > ul {
   gap: 20px;
 }
-.clinic_review.division02 ul li {
+.clinic_review.division02 > ul > li {
   width: calc(50% - 10px);
 }
 
@@ -556,6 +872,11 @@
 }
 .clinic_list_spread.division04 ul li .img_bx {
   margin-bottom: 16px;
+}
+.clinic_list_spread.division04 ul li .txt_bx p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.75;
 }
 
 .clinic_table table {
@@ -712,6 +1033,10 @@
   font-weight: 500;
 }
 
+.ptt_table.wedding tbody tr td:not(:first-child) {
+  color: #666;
+}
+
 .clininc_recommend {
   display: flex;
   align-items: center;
@@ -762,6 +1087,7 @@
   background-color: #fff;
 }
 .recommend_list ul li {
+  width: 100%;
   font-weight: 400;
   font-size: 16px;
   color: #222;
@@ -1051,6 +1377,26 @@
   background-color: #fff;
   padding: 40px 20px;
 }
+.mens_vs .mens_vs_inner .badge {
+  width: 240px;
+  margin: 0 auto;
+}
+.mens_vs .mens_vs_inner.type02 {
+  align-items: unset;
+}
+.mens_vs .mens_vs_inner.type02 .img_bx {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.mens_vs .mens_vs_inner.type02 .txt_bx {
+  margin-bottom: 0;
+}
+.mens_vs .mens_vs_inner.type02 .txt_bx .badge {
+  margin-bottom: 14px;
+}
 
 .mens_program_process .badge {
   width: 100%;
@@ -1237,6 +1583,13 @@
 }
 .step_stone_cross .clinic_flex_bx li:nth-child(2) {
   width: 56px;
+  margin: 0 20px;
+}
+.step_stone_cross.division03 .clinic_flex_bx li {
+  width: 200px;
+}
+.step_stone_cross.division03 .clinic_flex_bx li:nth-child(even) {
+  width: auto;
   margin: 0 20px;
 }
 

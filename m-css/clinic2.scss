@@ -22,6 +22,46 @@
         margin-right: 20px;
     }
 }
+.clinic_comment {
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    span {
+        position: relative;
+        &::after,&::before {
+            content: '';
+            width: 10px;
+            height: 19px;
+            background-size: 10px 19px;
+            position: absolute;
+            top: 0;
+        }
+        &::before {
+            background-image: url(/pc/cnp/images/special-clinic/icon_lsquo.png);
+            left: -14px;
+        }
+        &::after {
+            background-image: url(/pc/cnp/images/special-clinic/icon_rsquo.png);
+            right: -14px;
+        }
+    }
+}
+.check_tit {
+    display: block;
+    font-weight: 300;
+    font-size: 20px;
+    color: #222;
+    &::before {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        width: 20px;
+        height: 20px;
+        background-image: url(/pc/cnp/images/special-clinic/clinic_ptt__check_icon.png);
+        background-size: 20px 20px;
+        margin-bottom: 10px;
+    }
+}
 .clinic_talk_bx {
     position: relative;
     .txt_bx {
@@ -66,8 +106,17 @@
 .clinic_txt_white {
     color: #fff !important;
 }
+.clinic_txt_black {
+    color: #000 !important;
+}
+.clinic_txt_black2 {
+    color: #222 !important;
+}
 .clinic_font_bold {
     font-weight: 700 !important;
+}
+.clinic_font_regular {
+    font-weight: 400 !important;
 }
 .transparent_circle {
     ul {
@@ -98,6 +147,103 @@
         }
     }
 }
+.clinic_gray_circle {
+    &.type01 {
+        >ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            >li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                max-width: 200px;
+                max-height: 200px;
+                width: calc(100vw / 3 + 20px);
+                height: calc(100vw / 3 + 20px);
+                border: 3px solid #ccc;
+                border-radius: 50%;
+                .txt_bx {
+                    strong {
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #000;
+                        position: relative;
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 10px;
+                            height: 1px;
+                            background-color: #f19500;
+                            margin: 2px auto;
+                        }
+                    }
+                }
+            }
+        }
+        &.wedding {
+            >ul {
+                >li {
+                    background-size: cover;
+                    &:nth-child(1) {
+                        background-image: url(/pc/cnp/images/special-clinic/clinic_wedding_1.png);
+                    }
+                    &:nth-child(2) {
+                        background-image: url(/pc/cnp/images/special-clinic/clinic_wedding_2.png);
+                    }
+                    &:nth-child(3) {
+                        background-image: url(/pc/cnp/images/special-clinic/clinic_wedding_3.png);
+                    }
+                }
+            }
+        }
+    }
+    &.type02 {
+        ul {
+            max-width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 0 auto;
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 1.25;
+                    max-width: 105px;
+                    max-height: 105px;
+                    width: 74px;
+                    height: 74px;
+                    border: 5px solid #dadada;
+                    border-radius: 50%;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    position: relative;
+                    transition: all 0.3s ease;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        background-image: url(/m/cnp/images/special_clinic/btn_arrow.png);
+                        background-repeat: no-repeat;
+                        background-size: 11px 3.5px;
+                        width: 11px;
+                        height: 3.5px;
+                        bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
 .clinic_y_circle {
     ul {
             display: flex;
@@ -114,6 +260,214 @@
             height: 90px;
             border: 6px solid #ffb400;
             border-radius: 50%;
+        }
+    }
+}
+.point_list {
+    li {
+        line-height: 1.25;
+        span {
+            display: inline-block;
+            font-weight: 350;//demiLight
+            font-size: 12px;
+            position: relative;
+            margin-left: 6px;
+            &::before {
+                content: '';
+                width: 2px;
+                height: 2px;
+                position: absolute;
+                top: 8px;
+                left: -6px;
+            }
+        }
+    }
+    &.gray {
+        li {
+            color: #444;
+            span {
+                &::before {
+                    background-color: #444;
+                }
+            }
+        }
+    }
+    &.yellow {
+        li {
+            color: #444;
+            span {
+                &::before {
+                    background-color: #ffb400;
+                }
+            }
+            .link_wrap {
+                display: flex;
+            }
+        }
+    }
+}
+.recycle_bx {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            min-height: 100px;
+            color: #000;
+            &:nth-child(1) {
+                background-color: #ffb400;
+            }
+            &:nth-child(2) {
+                background-color: #fbd57b;
+            }
+            &:nth-child(3) {
+                background-color: #fdbe28;
+            }
+            &:nth-child(4) {
+                background-color: #fecc57;
+            }
+            strong {
+                font-weight: 900;
+                font-size: 14px;
+            }
+            p {
+                font-weight: 500;
+                font-size: 12px;
+            }
+        }
+        &::after {
+            content: '';
+            width: calc(58px / 2.5);
+            height: calc(50px / 2.5);
+            background-image: url(/pc/cnp/images/special-clinic/icon_recycle.png);
+            background-size: calc(58px / 2.5) calc(50px / 2.5);
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    }
+}
+.clinic_process_list {
+    display: flex;
+    align-items: center;
+    >li {
+        background-color: #fff;
+        position: relative;
+        .badge {
+            margin: 0 auto 10px;
+            color: #fff;
+        }
+        &::after {
+            content: '';
+            width: 20px;
+            height: 24px;
+            background-image: url(/pc/cnp/images/special-clinic/arrow_right3.png);
+            background-size: 20px 24px;
+            transform: translateY(-50%);
+            position: absolute;
+            top: 50%;
+            right: -25px;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    &.division03 {
+        flex-direction: column;
+        gap: 30px;
+        >li {
+            width: 100%;
+            padding: 30px 40px;
+            text-align: left;
+            &:nth-child(1) {
+                .badge {
+                    background-color: #000;
+                }
+            }
+            &:nth-child(2) {
+                .badge {
+                    background-color: #4e4e4e;
+                }
+            }
+            &:nth-child(3) {
+                .badge {
+                    background-color: #7a7a7a;
+                }
+            }
+            &::after {
+                content: '';
+                width: 10px;
+                height: 12px;
+                background-image: url(/pc/cnp/images/special-clinic/arrow_right3.png);
+                background-size: 10px 12px;
+                transform: translateX(-50%) rotate(90deg);
+                position: absolute;
+                top: inherit;
+                bottom: -20px;
+                left: 50%;
+            }
+        }
+    }
+}
+.clinic_link_list {
+    .badge {
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+    .point_list {
+        li {
+            margin-bottom: 6px;
+            &:last-child {
+                margin-bottom: 9;
+            }
+        }
+    }
+    >ul {
+        >li {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .link_wrap {
+        text-align: left;
+        span {
+            font-weight: 500;
+            font-size: 14px;
+            color: #000;
+            white-space: nowrap;
+            &::after {
+                content: ':';
+                margin: 0 4px;
+            }
+        }
+        a {
+            text-decoration: underline;
+            position: relative;
+            white-space: nowrap;
+            margin-right: 8px;
+            &::after {
+                content: '/';
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                right: -8px;
+            }
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -308,6 +662,57 @@
             }
         }
     }
+    &.botox, &.wedding{
+        &.type01 {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            li {
+                width: calc(100% / 2 - 15px);
+                position: relative;
+                .img_bx {
+                    position: relative;
+                    &::after {
+                    content: '';
+                    width: 6px;
+                    height: 10px;
+                    background-image: url(/pc/cnp/images/special-clinic/arrow_right2.png);
+                    background-size: 6px 10px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    transform: translateY(-50%);
+                    top: 50%;
+                    right: -18px;
+                }
+                }
+                .txt_bx {
+                    strong {
+                        font-size: 14px;
+                        display: inline-block;
+                        color: #222;
+                    }
+                    p {
+                        font-weight: 500;
+                        font-size: 12px;
+                    }
+                }
+                &:nth-child(even) {
+                    .img_bx {
+                            &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .txt_bx {
+        p {
+            font-size: 13px;
+        }
+    }
 }
 .badge {
     font-size: 16px;
@@ -327,6 +732,10 @@
 }
 .bg_gray {
     background-color: #f9f9f9;
+}
+
+.bg_white {
+    background-color: #fff;
 }
 
 .title28 {
@@ -407,12 +816,12 @@
             margin-top: 16px;
         }
     }
-    ul {
+    >ul {
         display: flex;
         flex-wrap: wrap;
         gap: 15px;
         width: 100%;
-        li {
+        >li {
             width: 100%;
             .desc {
                 font-size: 16px;
@@ -444,12 +853,69 @@
                     }
                 }
             }
+            .con_bx {
+                background-color: #fff;
+                padding: 25px 10px;
+                .recommend_list {
+                    width: fit-content;
+                    margin: 0 auto;
+                    li {
+                        margin-bottom: 8px;
+                    }
+                }
+                & + .con_bx {
+                    border-top: 1px solid #ddd;
+                }
+                p {
+                    strong {
+                        font-weight: 500;
+                        color: #000;
+                    }
+                }
+            }
             .item {
                 font-weight: 700;
                 font-size: 18px;
                 color: #222;
                 background-color: #ffb400;
                 padding: 12.5px 10px;
+            }
+        }
+    }
+    &.division02 {
+        >ul {
+            gap: 20px;
+            >li {
+                width: 100%;
+                @media screen and (max-width:400px) {
+                    .con_bx {
+                        p {
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.clinic_list_spread {
+    &.division04 {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            li {
+                width: calc(100% / 2 - 10px);
+                .img_bx {
+                    margin-bottom: 14px;
+                }
+                .txt_bx {
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 1.25;
+                }
             }
         }
     }
@@ -616,6 +1082,14 @@
             gap: 20px 10px;
             li {
                 width: calc(100% / 3 - 7px);
+            }
+        }
+    }
+    &.botox {
+        ul {
+            justify-content: center;
+            li {
+                width: calc(100% / 3 - 20px);
             }
         }
     }
@@ -1000,6 +1474,25 @@
             background-color: #fff;
             padding: 20px 20px;
         }
+        &.type02 {
+            .img_bx {
+                display: block;
+                width: auto;
+                height: auto;
+                margin: 0 auto;
+                margin-bottom: 14px;
+                img {
+                    width: 50%;
+
+                }
+            }
+            .txt_bx {
+                margin-bottom: 0;
+                .badge {
+                    margin-bottom: 14px;
+                }
+            }
+        }
     }
 }
 .mens_program_process {
@@ -1221,6 +1714,20 @@
             &:nth-child(2) {
                 width: 56px;
                 margin: 0 8px;
+            }
+        }
+    }
+    &.division03 {
+        .clinic_flex_bx {
+            flex-direction: column;
+            li {
+                width: 200px;
+                &:nth-child(even) {
+                    img {
+                        width: 20px;
+                        margin: 10px auto;
+                    }
+                }
             }
         }
     }
