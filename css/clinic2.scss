@@ -44,6 +44,16 @@
             right: -20px;
         }
     }
+    &.yellow {
+        span {
+            &::before {
+                background-image: url(/pc/cnp/images/special-clinic/icon_lsquo_yellow.png);
+            }
+            &::after {
+                background-image: url(/pc/cnp/images/special-clinic/icon_rsquo_yellow.png);
+            }
+        }
+    }
 }
 .check_tit {
     display: block;
@@ -101,6 +111,10 @@
             }
             &:last-child {
                 margin-right: 0;
+            }
+            &.light_gray {
+                color: #000;
+                background-color: #dadada;
             }
         }
     }
@@ -220,6 +234,34 @@
             height: 110px;
             border: 8px solid #ffb400;
             border-radius: 50%;
+        }
+    }
+    &.with_plus {
+        ul {
+            gap: 40px;
+            li {
+                width: 140px;
+                height: 140px;
+                font-size: 16px;
+                border-width: 4px;
+                position: relative;
+                &::after {
+                    content: '';
+                    width: 17px;
+                    height: 17px;
+                    background-image: url(/pc/cnp/images/special-clinic/plus_icon4.png);
+                    background-size: 17px 17px;
+                    transform: translateY(-50%);
+                    position: absolute;
+                    top: 50%;
+                    right: -30px;
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
@@ -622,7 +664,7 @@
     }
 }
 .bg_gray {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9 !important;
 }
 
 .bg_white {
@@ -895,6 +937,65 @@
             }
         }
     }
+    &.division05 {
+        ul {
+            display: flex;
+            gap: 10px;
+            li {
+                width: calc(100% / 5);
+                .img_bx {
+                    margin-bottom: 8px;
+                }
+                .txt_bx {
+                    strong {
+                        color: #000;
+                    }
+                    p {
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 1.45;
+                    }
+                }
+            }
+        }
+    }
+}
+.clinic_badge_list {
+    width: 100%;
+    max-width: 590px;
+    ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        li {
+            width: calc(100% / 4);
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 35px;
+            padding: 9px 30px;
+            box-sizing: border-box;
+            color: #000;
+            background-color: #ffb400;
+            &:first-child {
+                color: #fff;
+                background-color: #222;
+                position: relative;
+                margin-right: 10px;
+                &::after {
+                    content: '';
+                    width: 13px;
+                    height: 16px;
+                    background-image: url(/pc/cnp/images/special-clinic/icon_triangle.png);
+                    background-size: 13px 16px;
+                    transform: translateY(-50%);
+                    position: absolute;
+                    top: 50%;
+                    right: -10px;
+                }
+            }
+        }
+    }
 }
 .clinic_table table {width: 100%;color: #000}
 .clinic_table table caption {font-size: 0; visibility: hidden;}
@@ -1105,7 +1206,7 @@
     ul {
         background-color: #fff;
         li {
-            width: 100%;
+            width: calc(100% - 40px);
             font-weight: 400;
             font-size: 16px;
             color: #222;
@@ -1796,6 +1897,155 @@
             &:nth-child(even) {
                 border-color: #dadada;
             }
+        }
+    }
+}
+
+.clinic_versus_wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 40px;
+    .versus01,.versus02 {
+        width: 50%;
+        background-color: #fff;
+        .badge {
+            width: 240px;
+            margin: 0 auto;
+            &.b {
+                color: #fff;
+            }
+        }
+    }
+    .badge_wrap {
+        width: 100%;
+        background-color: #f9f9f9;
+        padding-bottom: 30px;
+    }
+    .con_bx {
+        padding: 40px;
+        &.type01 {
+            min-height: 610px;
+            position: relative;
+            padding-bottom: 80px;
+            .con_tit {
+                font-size: 28px;
+                color: #222;
+                margin-bottom: 40px;
+            }
+            .img_bx {
+                margin-bottom: 35px;
+            }
+            .txt_bx {
+                margin-bottom: 25px;
+                .tit {
+                    display: inline-block;
+                    font-size: 18px;
+                    color: #222;
+                    margin-bottom: 16px;
+                }
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 1.7;
+                }
+            }
+            .link_btn {
+                display: inline-block;
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+                color: #222;
+                font-weight: 400;
+                border: 1px solid #222;
+                background: #fff;
+                cursor: pointer;
+                min-width: 200px;
+                padding: 0 20px;
+                transform: translateX(-50%);
+                position: absolute;
+                bottom: 40px;
+                left: 50%;
+                &:hover {
+                    border-color: #996005;
+                    color: #996005;
+                }
+            }
+        }
+        &.type02 {
+            background-color: #f9f9f9;
+            .border {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 3px solid;   
+                background-color: #fff;
+                min-height: 165px;
+                line-height: 1.7;
+                &.y {
+                    border-color: #ffb400;
+                }
+                &.g {
+                    border-color: #888888;
+                }
+            }
+        }
+    }
+    .arrow_bx {
+        background-color: #fff;
+        border-top: 40px solid #f9f9f9;
+        padding: 10px 0;
+    }
+    
+    .clinic_versus_inner {
+        display: flex;
+        gap: 18px;
+    }
+    .clinic_comment {
+        color: #666;
+        font-weight: 300;
+    }
+    .clinic_choice {
+        background-repeat: no-repeat;
+        min-height: 364px;
+        position: relative;
+        .txt_bx {
+            font-size: 16px;
+            transform: translateY(-50%);
+            position: absolute;
+            top: 46%;
+        }
+        &.show_on {
+            background-image: url(/pc/cnp/images/special-clinic/clinic_obvious_1.png);
+            background-position: 20px 100%;
+            .txt_bx {
+                right: 16%;
+            }
+        }
+        &.show_off {
+            background-image: url(/pc/cnp/images/special-clinic/clinic_obvious_2.png);
+            background-position: calc(100% - 20px) 100%;
+            .txt_bx {
+                left: 5%;
+            }
+        }
+    }
+    
+}
+
+.clinic_tab_header {
+    margin-bottom: 30px;
+    &::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+.clinic_tab_con {
+    .clinic_editor_cont_title {
+        margin-bottom: 30px;
+        .clinic_title_sub {
+            margin-bottom: 20px;
         }
     }
 }

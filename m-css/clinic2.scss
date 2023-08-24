@@ -30,19 +30,29 @@
         position: relative;
         &::after,&::before {
             content: '';
-            width: 10px;
-            height: 19px;
-            background-size: 10px 19px;
+            width: 6px;
+            height: 12px;
+            background-size: 6px 12px;
             position: absolute;
             top: 0;
         }
         &::before {
             background-image: url(/pc/cnp/images/special-clinic/icon_lsquo.png);
-            left: -14px;
+            left: -10px;
         }
         &::after {
             background-image: url(/pc/cnp/images/special-clinic/icon_rsquo.png);
-            right: -14px;
+            right: -10px;
+        }
+    }
+    &.yellow {
+        span {
+            &::before {
+                background-image: url(/pc/cnp/images/special-clinic/icon_lsquo_yellow.png);
+            }
+            &::after {
+                background-image: url(/pc/cnp/images/special-clinic/icon_rsquo_yellow.png);
+            }
         }
     }
 }
@@ -260,6 +270,33 @@
             height: 90px;
             border: 6px solid #ffb400;
             border-radius: 50%;
+        }
+    }
+    &.with_plus {
+        max-width: 280px;
+        ul {
+            flex-wrap: wrap;
+            flex-flow: wrap-reverse;
+            flex-direction: row-reverse;
+            position: relative;
+            gap: 20px;
+            li {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 1.25;
+                border-width: 4px;
+            }
+            &::after {
+                content: '';
+                width: 14px;
+                height: 14px;
+                background-image: url(/pc/cnp/images/special-clinic/plus_icon4.png);
+                background-size: 14px 14px;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                top: 56%;
+                left: 50%;
+            }
         }
     }
 }
@@ -731,7 +768,7 @@
     }
 }
 .bg_gray {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9 !important;
 }
 
 .bg_white {
@@ -919,6 +956,59 @@
             }
         }
     }
+    &.division05 {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            li {
+                width: calc(50% - 30px);
+                .img_bx {
+                    img {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+.clinic_badge_list {
+    width: 100%;
+    max-width: 590px;
+    ul {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        li {
+            width: calc(100% / 4);
+            font-size: 12px;
+            font-weight: 400;
+            border-radius: 35px;
+            padding: 5px 2px;
+            box-sizing: border-box;
+            color: #000;
+            background-color: #ffb400;
+            &:first-child {
+                color: #fff;
+                background-color: #222;
+                position: relative;
+                margin-right: 4px;
+                &::after {
+                    content: '';
+                    width: 5px;
+                    height: 8px;
+                    background-image: url(/pc/cnp/images/special-clinic/icon_triangle.png);
+                    background-size: 5px 8px;
+                    transform: translateY(-50%);
+                    position: absolute;
+                    top: 50%;
+                    right: -4px;
+                }
+            }
+        }
+    }
 }
 .clinic_table table {width: 100%;color: #000}
 .clinic_table table caption {font-size: 0; visibility: hidden;}
@@ -1085,7 +1175,7 @@
             }
         }
     }
-    &.botox {
+    &.botox, &.wannabe, &.obvious {
         ul {
             justify-content: center;
             li {
@@ -1159,19 +1249,19 @@
         background-color: #fff;
         li {
             font-weight: 400;
-            font-size: 16px;
+            font-size: 14px;
             color: #222;
             position: relative;
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             text-align: left;
             position: relative;
-            padding-left: 40px;
+            padding-left: 30px;
             word-break: keep-all;
             &::before {
                 content: '';
                 display: inline-block;
-                width: 25px;
-                height: 25px;
+                width: 20px;
+                height: 20px;
                 background-image: url(/pc/cnp/images/special-clinic/clinic_ptt__check_icon.png);
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -1909,6 +1999,198 @@
             &:nth-child(even) {
                 border-color: #dadada;
             }
+        }
+    }
+}
+.clinic_versus_wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    .versus01,.versus02 {
+        width: 100%;
+        background-color: #fff;
+        border: 20px solid #f9f9f9;
+        .badge_wrap {
+            background-color: #f9f9f9;
+        }
+        .badge {
+            width: 240px;
+            margin: 0 auto;
+            &.b {
+                color: #fff;
+            }
+        }
+    }
+    .versus01 {
+        margin-bottom: 20px;
+    }
+    .badge_wrap {
+        width: 100%;
+        padding-bottom: 20px;
+        .badge {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+    .con_bx {
+        padding: 20px;
+        &.type01 {
+            position: relative;
+            .con_tit {
+                font-weight: 500;
+                font-size: 18px;
+                color: #222;
+                margin-bottom: 20px;
+            }
+            .img_bx {
+                margin-bottom: 20px;
+            }
+            .txt_bx {
+                margin-bottom: 16px;
+                .tit {
+                    display: inline-block;
+                    font-size: 14px;
+                    color: #222;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-weight: 300;
+                    font-size: 12px;
+                }
+            }
+            .link_btn {
+                display: inline-block;
+                text-align: center;
+                font-size: 12px;
+                height: 40px;
+                line-height: 40px;
+                color: #222;
+                font-weight: 400;
+                border: 1px solid #222;
+                background: #fff;
+                cursor: pointer;
+                min-width: 180px;
+                padding: 0 20px;
+            }
+        }
+        &.type02 {
+            background-color: #f9f9f9;
+            padding: 0;
+            .border {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                border: 2px solid;   
+                background-color: #fff;
+                padding: 20px;
+                &.y {
+                    border-color: #ffb400;
+                }
+                &.g {
+                    border-color: #888888;
+                }
+            }
+        }
+    }
+    .arrow_bx {
+        background-color: #f9f9f9;
+        padding: 10px 0;
+        img {
+            width: 16px;
+        }
+    }
+    
+    .clinic_versus_inner {
+    }
+    .clinic_comment {
+        color: #666;
+        font-weight: 300;
+    }
+    .clinic_choice {
+        background-repeat: no-repeat;
+        background-size: 90px;
+        min-height: 200px;
+        position: relative;
+        .txt_bx {
+            font-size: 12px;
+            transform: translateY(-50%);
+            position: absolute;
+            top: 46%;
+            &::after,&::before {
+                content: '';
+                width: 8px;
+                height: 14px;
+                background-size: 8px 14px;
+                transform: translateX(-50%);
+                position: absolute;
+            }
+            &::before {
+                background-image: url(/pc/cnp/images/special-clinic/icon_lsquo.png);
+                left: 50%;
+                top: -20px;
+            }
+            &::after {
+                background-image: url(/pc/cnp/images/special-clinic/icon_rsquo.png);
+                left: 50%;
+                bottom: -20px;
+            }
+        }
+        &.show_on {
+            background-image: url(/pc/cnp/images/special-clinic/clinic_obvious_1.png);
+            background-position: 20px 100%;
+            .txt_bx {
+                right: 3%;
+            }
+        }
+        &.show_off {
+            background-image: url(/pc/cnp/images/special-clinic/clinic_obvious_2.png);
+            background-position: calc(100% - 20px) 100%;
+            .txt_bx {
+                left: 5%;
+            }
+        }
+        @media screen and (min-width:530px) {
+            background-repeat: no-repeat;
+            background-size: auto;
+            min-height: 364px;
+            position: relative;
+            .txt_bx {
+                font-size: 16px;
+                transform: translateY(-50%);
+                position: absolute;
+                top: 46%;
+            }
+            &.show_on {
+                background-image: url(/pc/cnp/images/special-clinic/clinic_obvious_1.png);
+                background-position: 20px 100%;
+                .txt_bx {
+                    right: 16%;
+                }
+            }
+            &.show_off {
+                background-image: url(/pc/cnp/images/special-clinic/clinic_obvious_2.png);
+                background-position: calc(100% - 20px) 100%;
+                .txt_bx {
+                    left: 5%;
+                }
+            }
+        }
+    }
+}
+
+.clinic_tab_header {
+    margin-bottom: 20px;
+    &::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+.clinic_tab_con {
+    .clinic_editor_cont_title {
+        margin-bottom: 20px;
+        .clinic_title_sub {
+            margin-bottom: 20px;
         }
     }
 }
