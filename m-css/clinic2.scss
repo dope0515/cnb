@@ -161,6 +161,10 @@
             &:last-child {
                 margin-right: 0;
             }
+            &.light_gray {
+                color: #000;
+                background-color: #dadada;
+            }
         }
     }
 }
@@ -874,7 +878,7 @@
                 font-size: 16px;
                 line-height: 28px;
                 background-color: #fff;
-                padding: 25px 10px;
+                padding: 20px 10px;
                 p {
                     width: fit-content;
                     margin: 0 auto;
@@ -902,7 +906,7 @@
             }
             .con_bx {
                 background-color: #fff;
-                padding: 25px 10px;
+                padding: 20px 10px;
                 .recommend_list {
                     width: fit-content;
                     margin: 0 auto;
@@ -922,10 +926,10 @@
             }
             .item {
                 font-weight: 700;
-                font-size: 18px;
+                font-size: 16px;
                 color: #222;
                 background-color: #ffb400;
-                padding: 12.5px 10px;
+                padding: 10.5px 10px;
             }
         }
     }
@@ -1281,7 +1285,7 @@
                 left: 0px;
             }
             &:last-child {
-                margin-bottom: 0;
+                margin-bottom: 0 !important;
             }
         }
     }  
@@ -1855,6 +1859,10 @@
             @media screen and (max-width:370px) {
                 flex-wrap: wrap;
                 justify-content: center;
+                li {
+                    width: 110px;
+                    height: 110px;
+                }
             }
         }
     }
