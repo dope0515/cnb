@@ -6,6 +6,10 @@
         box-sizing: border-box;
     }
 }
+.clinic_anchor {
+    margin-top: 0 !important;
+    padding-top: 65px;
+}
 .clinic_title_text {
     line-height: 1.25;
     & + .clinic_title_name {
@@ -57,6 +61,7 @@
 }
 .clinic_underline {
     background-color: #ffff8d;
+    line-height: 1.7;
 }
 .check_tit {
     display: block;
@@ -632,6 +637,9 @@
                         display: inline-block;
                         color: #222;
                     }
+                    p {
+                        line-height: 1.25;
+                    }
                 }
                 &:last-child {
                    .img_bx {
@@ -852,7 +860,7 @@
         gap: 15px;
         width: 100%;
         >li {
-            width: calc(100% / 3 - 30px);
+            width: calc(100% / 3 - 10px);
             .desc {
                 font-size: 16px;
                 line-height: 28px;
@@ -2052,6 +2060,25 @@
         margin-bottom: 30px;
         .clinic_title_sub {
             margin-bottom: 20px;
+        }
+    }
+}
+
+.reinforce_list {
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            .img_bx {
+                margin-right: 24px;
+                img {
+                    width: 60px;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

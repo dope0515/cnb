@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.clinic_anchor {
+  margin-top: 0 !important;
+  padding-top: 65px;
+}
+
 .clinic_title_text {
   line-height: 1.25;
 }
@@ -56,6 +61,7 @@
 
 .clinic_underline {
   background-color: #ffff8d;
+  line-height: 1.7;
 }
 
 .check_tit {
@@ -607,6 +613,9 @@
   display: inline-block;
   color: #222;
 }
+.clinic_flex_bx.botox.type01 li .txt_bx p, .clinic_flex_bx.wedding.type01 li .txt_bx p {
+  line-height: 1.25;
+}
 .clinic_flex_bx.botox.type01 li:last-child .img_bx::after, .clinic_flex_bx.wedding.type01 li:last-child .img_bx::after {
   display: none;
 }
@@ -835,7 +844,7 @@
   width: 100%;
 }
 .clinic_review > ul > li {
-  width: calc(33.3333333333% - 30px);
+  width: calc(33.3333333333% - 10px);
 }
 .clinic_review > ul > li .desc {
   font-size: 16px;
@@ -1964,4 +1973,19 @@
 }
 .clinic_tab_con .clinic_editor_cont_title .clinic_title_sub {
   margin-bottom: 20px;
+}
+
+.reinforce_list ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.reinforce_list ul li .img_bx {
+  margin-right: 24px;
+}
+.reinforce_list ul li .img_bx img {
+  width: 60px;
+}
+.reinforce_list ul li:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=clinic2.css.map */

@@ -11,6 +11,10 @@
         background-color: #fff;
     }
 }
+.clinic_anchor {
+    margin-top: 0 !important;
+    padding-top: 35px;
+}
 .padding_bx40 {
     padding: 20px;
 }
@@ -55,6 +59,9 @@
             }
         }
     }
+}
+.clinic_underline {
+    background-color: #ffff8d;
 }
 .check_tit {
     display: block;
@@ -750,6 +757,9 @@
             font-size: 13px;
         }
     }
+    &.direction_row {
+        flex-direction: row;
+    }
 }
 .badge {
     font-size: 16px;
@@ -1175,7 +1185,7 @@
             }
         }
     }
-    &.botox, &.wannabe, &.obvious {
+    &.botox, &.wannabe, &.obvious, &.reinforce {
         ul {
             justify-content: center;
             li {
@@ -2191,6 +2201,25 @@
         margin-bottom: 20px;
         .clinic_title_sub {
             margin-bottom: 20px;
+        }
+    }
+}
+.reinforce_list {
+    ul {
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            text-align: left;
+            .img_bx {
+                margin-right: 12px;
+                img {
+                    width: 40px;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }

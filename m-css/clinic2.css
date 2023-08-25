@@ -34,6 +34,11 @@
   background-color: #fff;
 }
 
+.clinic_anchor {
+  margin-top: 0 !important;
+  padding-top: 35px;
+}
+
 .padding_bx40 {
   padding: 20px;
 }
@@ -74,6 +79,10 @@
 }
 .clinic_comment.yellow span::after {
   background-image: url(/pc/cnp/images/special-clinic/icon_rsquo_yellow.png);
+}
+
+.clinic_underline {
+  background-color: #ffff8d;
 }
 
 .check_tit {
@@ -715,6 +724,9 @@
 .clinic_flex_bx .txt_bx p {
   font-size: 13px;
 }
+.clinic_flex_bx.direction_row {
+  flex-direction: row;
+}
 
 .badge {
   font-size: 16px;
@@ -1141,10 +1153,10 @@
 .ptt_better.healing ul li {
   width: calc(33.3333333333% - 7px);
 }
-.ptt_better.botox ul, .ptt_better.wannabe ul, .ptt_better.obvious ul {
+.ptt_better.botox ul, .ptt_better.wannabe ul, .ptt_better.obvious ul, .ptt_better.reinforce ul {
   justify-content: center;
 }
-.ptt_better.botox ul li, .ptt_better.wannabe ul li, .ptt_better.obvious ul li {
+.ptt_better.botox ul li, .ptt_better.wannabe ul li, .ptt_better.obvious ul li, .ptt_better.reinforce ul li {
   width: calc(33.3333333333% - 20px);
 }
 
@@ -2129,4 +2141,20 @@
 }
 .clinic_tab_con .clinic_editor_cont_title .clinic_title_sub {
   margin-bottom: 20px;
+}
+
+.reinforce_list ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.reinforce_list ul li .img_bx {
+  margin-right: 12px;
+}
+.reinforce_list ul li .img_bx img {
+  width: 40px;
+}
+.reinforce_list ul li:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=clinic2.css.map */
