@@ -1,0 +1,862 @@
+/*
+/pc/cnp/css/clinic3.css 
+*/
+
+/* 여드름 케어*/
+.clinic_box_wrap {
+	display: flex;
+	margin: 0 auto;
+	width: fit-content;
+	gap: 40px;
+}
+
+.clinic_box {
+	border: 2px solid #ddd;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 120px;
+	font-size: 18px;
+	font-weight: 400;
+	position: relative;
+}
+
+.clinic_box::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: -42px;
+	width: 42px;
+	height: 2px;
+	background: #ddd;
+}
+
+.clinic_box:last-child::after {
+	display: none;
+}
+
+.clinic_title_empha {
+	font-size: 18px;
+	color: #222;
+}
+
+.clinic_point_gray {
+	color: #666;
+}
+
+.clinic_point_green {
+	color: #638c1c;
+}
+
+.clinic_point_black {
+	color: #222;
+}
+
+.clinic_point_emerald {
+	color: #23a671;
+}
+
+.clinic_point_pink {
+	color: #e53e30;
+}
+
+.clinic_point_blue {
+	color: #0060af;
+}
+
+.clinic_title_line.spicule {
+	background: #c3d69b;
+}
+
+.spicule_box {
+	border: 40px solid #f9f9f9;
+}
+
+.spicule_box .box {
+	display: flex;
+	padding: 40px 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.spicule_box .desc {
+	text-align: left;
+}
+
+.aladdin_box {
+	border: 40px solid #f9f9f9;
+}
+
+.aladdin_box .box {
+	padding: 35px 0;
+}
+
+.aladdin_box .desc {
+	line-height: 1.8;
+}
+
+.aladdin_box .circle_inner {
+	display: flex;
+	column-gap: 40px;
+	justify-content: center;
+}
+
+.aladdin_box .circle_wrap {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+
+.aladdin_box .circle_wrap_num {
+	width: 220px;
+	height: 75px;
+	background: #a3d55f;
+	color: #000;
+	font-size: 18px;
+	border-radius: 85px;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.aladdin_box .circle_wrap_black {
+	display: flex;
+	align-items: center;
+	column-gap: 40px;
+}
+
+.aladdin_box .circle_wrap_black .desc {
+	display: flex;
+	align-items: center;
+	background: #000;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 5px 30px;
+	border-radius: 50px;
+}
+
+.clinic_title_line.milkpil {
+	background: #9af4c9;
+}
+.milkpil_box {
+	border: 40px solid #f9f9f9;
+}
+
+.milkpil_box .circle_wrap {
+	display: flex;
+	justify-content: center;
+	column-gap: 30px;
+	padding: 40px 0;
+}
+
+.milkpil_box .circle_wrap .circle {
+	color: #222;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 50%;
+	width: 220px;
+	height: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	font-weight: 400;
+}
+
+.milkpil_box .circle .txt {
+	padding-top: 10px;
+    line-height: 1.5;
+}
+
+.milkpil_box .circle:first-child,
+.milkpil_box .circle:nth-child(3) {
+	background: #9de8c3;
+}
+
+.milkpil_box .circle:nth-child(2),
+.milkpil_box .circle:nth-child(4) {
+	border: 2px solid #9de8c3;
+}
+
+.clinic_txt_bx {
+	margin: 0 40px;
+	padding: 40px 0;
+	border-top: 1px solid #ddd;
+}
+
+.clinic_txt_bx .desc {
+	line-height: 1.8;
+	color: #666;
+	font-size: 16px;
+}
+
+.clinic_title_line.acne {
+	background: #f9b7b3;
+}
+
+.acne_box {
+	border: 40px solid #f9f9f9;
+}
+
+.acne_box .box .top {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+}
+
+.clinic_img-bx {
+	width: 60px;
+	height: 50px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.acne_box .badge {
+	width: 184px;
+	height: 45px;
+	color: #000;
+	background: #ff99a8;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.acne_box .effect {
+	padding: 0 20px;
+}
+
+.clinic_title_line.coolzen {
+	background: #d1e6f7;
+}
+
+.coolzen_box {
+	border: 40px solid #f9f9f9;
+}
+
+.coolzen_box .box .top {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+	column-gap: 50px;
+}
+
+.coolzen_box .badge {
+	width: 294px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.coolzen_box .effect:first-child .badge {
+	background: #88c8ed;
+	color: #000;
+}
+
+.coolzen_box .effect:last-child .badge {
+	background: #0060af;
+	color: #fff;
+}
+
+.coolzen_box .clinic_title_empha {
+	font-size: 22px;
+}
+
+.clinic_title_line .acne-clinic {
+	background: #ffb400;
+}
+
+.acne-clinic_box {
+	border: 40px solid #f9f9f9;
+}
+
+.acne-clinic_box .badge {
+	background: #ffb400;
+	width: 179px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #000;
+}
+
+.acne-clinic_box .box .top {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+	column-gap: 30px;
+}
+
+
+/* .img_board_list_type_01 추가 */
+
+.img_board_border {
+    border-bottom: 1px solid #ddd !important;
+}
+
+.img_board_list_type_01 li a .beaf_box .title {
+    width: 250px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	background: #222;
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: -1.5px;
+}
+
+.img_board_list_type_01 .tit_cate_wrap {
+	text-align: left;
+}
+
+.img_board_list_type_01 .tit_cate {
+	border: 1px solid #996005;
+	color: #996005;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 15px;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.img_board_list_type_01 .tit_desc {
+	font-size: 15px;
+	color: #666;
+	font-weight: 300;
+}
+
+.img_board_list_type_01 li a .beaf_box .after_box .title {
+	color: #ffb400;
+}
+
+.clinic_home .img_board_list_type_01 li a .img_box{
+	width: 250px;
+}
+
+.clinic_home .img_board_list_type_01 li a .beaf_box .after_box:before{
+    left: -25px;
+}
+
+/* 모공케어 */
+.hydrofill_box .process {
+	display: flex;
+	justify-content: center;
+	column-gap: 50px;
+}
+
+.hydrofill_box .process .badge {
+	background: #0060af;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 30px;
+	padding: 7px 25px;
+}
+
+.hydrofill_box .process .txt {
+	color: #000;
+	font-size: 18px;
+	font-weight: 700;
+	padding-top: 15px;
+}
+
+.hydrofill_box .process .icon-arrow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hydrofill_box .box {
+	border: 40px solid #f9f9f9;
+	padding: 40px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.mts_effect {
+	display: flex;
+	justify-content: center;
+	column-gap: 30px;
+}
+
+.mts_effect .badge {
+	background: #a3d55f;
+	color: #000;
+
+}
+
+.mts_box {
+	border: 40px solid #f9f9f9;
+	padding: 40px 20px;
+}
+
+.mts_box .step-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 15px;
+}
+
+.mts_box .step-desc .number {
+	color: #638c1c;
+	font-weight: 700;
+}
+
+.pore_effect {
+	display: flex;
+	justify-content: center;
+}
+
+.pore_effect .badge {
+	background: #ff99a8;
+	color: #000;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pore_box {
+	border: 4px solid #f9b7b3;
+	padding: 40px 20px;
+}
+
+.pore_box .care-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pore_box .care-wrap .txt-bx {
+	font-size: 18px;
+}
+
+.surgery_box .txt-bx {
+	font-size: 18px;
+}
+
+.surgery-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+}
+
+/* 탄력 주름 케어 */
+.ilec_box {
+	border: 40px solid #f9f9f9;
+}
+
+.ilec_box .box .top {
+	display: flex;
+	justify-content: center;
+	padding: 40px 0;
+	column-gap: 50px;
+}
+
+.ilec_box .badge {
+	width: 297px;
+	margin-bottom: 20px;
+}
+
+.ilec_box .effect:first-child .badge {
+	background: #a3d55f;
+	color: #000;
+}
+
+.ilec_box .effect:last-child .badge {
+	background: #638c1c;
+	color: #fff;
+}
+
+.ilec_box .clinic_title_empha {
+	font-size: 22px;
+}
+
+.high_fre_box {
+	border: 40px solid #f9f9f9;
+}
+
+.high_fre_box .circle_wrap {
+	display: flex;
+	justify-content: center;
+	column-gap: 30px;
+	padding: 40px 0;
+}
+
+.high_fre_box .circle_wrap .circle {
+	color: #222;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 50%;
+	width: 220px;
+	height: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-weight: 400;
+}
+
+.high_fre_box .circle .txt {
+	padding-top: 10px;
+}
+
+.high_fre_box .circle:first-child,
+.high_fre_box .circle:nth-child(3) {
+	background: #ff99a8;
+}
+
+.high_fre_box .circle:nth-child(2) {
+	border: 2px solid #ff99a8;
+}
+
+/* 화이트닝 케어 */
+
+.coolzen_box.white .badge {
+	background: #ff99a8 !important; 
+}
+
+/* 진정 보습 케어 */
+
+.coolzen_box.center .top {
+	align-items: center;
+}
+
+.coolzen_box.center .effect:first-child .badge {
+	background: #ffb400 !important;
+}
+
+.coolzen_box.center .effect:last-child .badge {
+	background: #222 !important;
+}
+
+.clinic_side_title.big{
+	padding: 5px 25px;
+}
+
+.clinic_side_title.big::after{
+    background: url(/pc/cnp/images/clinic/side1_big.png) no-repeat;
+    height: 60px;
+}
+
+.clinic_side_title.big::before{
+    background: url(/pc/cnp/images/clinic/side2_big.png) no-repeat;
+    height: 60px;
+}
+
+.clinic_box.small{
+	height: 70px;
+}
+
+.clinic_before_after{
+    min-width: 1100px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 두피 탈모 케어 */
+
+.hair-loss_box {
+	border: 40px solid #f9f9f9;
+}
+
+.hair-loss_box .badge {
+	background: #ffb400;
+	border-radius: 30px;
+	font-weight: 300;
+	margin-right: 15px;
+	font-size: 28px;
+	padding: 0 30px;
+	color: #000;
+}
+
+.hair-loss_box .inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hair-loss_box .clinic_point_sub {
+	display: flex;
+	align-items: center;
+}
+
+.hair-loss_box .top {
+	row-gap: 20px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 40px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hair-loss_box .top .txt {
+	flex: 1 0 50%;
+	max-width: 50%;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.hair-loss_box .bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 40px;
+}
+
+.hair-loss_box .bottom .clinic_title_desc {
+	text-align: left;
+}
+
+.medicine_box {
+	border: 40px solid #f9f9f9;
+}
+
+.medicine_box .box .top {
+	padding: 40px 0;
+	display: flex;
+	justify-content: center;
+	column-gap: 150px;
+}
+
+.medicine_box .content .txt {
+	font-size: 18px;
+	font-weight: 500;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	color: #000;
+}
+
+.medicine_box .box .badge {
+	font-size: 18px;
+	width: 294px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.medicine_box .box .content:first-child .badge {
+	background: #9de8c3;
+	color: #000;
+}
+
+.medicine_box .box .content:last-child .badge {
+	background: #23a671;
+	color: #fff;
+}
+
+.scalp_box {
+	border: 40px solid #f9f9f9;
+}
+
+.scalp_box .top {
+	padding: 40px 0;
+}
+
+.scalp_box .top .img-bx-wrap {
+	display: flex;
+	justify-content: center;
+	column-gap: 2px;
+}
+
+.scalp_box .clinic_tit_medium {
+	padding: 40px 0;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 10px;
+	color: #313131;
+}
+
+.scalp_box .clinic_tit_medium img {
+	padding-bottom: 5px;
+}
+
+.clinic_tit_medium {
+	font-size: 24px;
+}
+
+.mezo_box {
+	border: 40px solid #f9f9f9;
+}
+
+.mezo_box .box {
+	padding: 40px 20px;
+}
+
+.mezo_box .box .top {
+	display: flex;
+	justify-content: center;
+	column-gap: 35px;
+	margin-bottom: 40px;
+}
+
+.mezo_box .badge-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	row-gap: 10px;
+}
+
+.mezo_box .top .badge {
+	background: #a3d55f;
+	color: #000;
+	width: 310px;
+	font-weight: 500;
+}
+
+.clinic_msg_bx {
+	border: 5px solid #ffb400;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 40px 20px;
+}
+
+/* 임산부 프로그램 */
+.pre_question_box {
+	border: 40px solid #f9f9f9;
+	padding: 40px 20px;
+}
+
+.pre_question_box .circle_bx {
+	display: flex;
+	justify-content: center;
+	column-gap: 20px;
+}
+
+.pre_question_box .circle_bx .circle {
+	border: 3px solid #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	position: relative;
+}
+
+.pre_question_box .circle .txt-bx {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 60px;
+	color: #666;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.pre_question_box .circle:nth-child(2) {
+	background: #ffb400;
+	border: 0;
+}
+
+.pre_question_box .circle:nth-child(2) .percent {
+	color: #000;
+}
+
+.pre_question_box .circle:nth-child(2) .txt-bx {
+	color: #222;
+}
+
+.pre_question_box .percent {
+	font-size: 36px;
+}
+
+.pre_question_box .percent strong {
+	font-weight: 700;
+	padding-right: 5px;
+}
+
+.pre_who_box .box {
+	border: 40px solid #f9f9f9;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 80px;
+	margin-top: 30px;
+}
+
+.pre_who_box .box .txt-bx {
+	text-align: left;
+}
+
+.pre_who_box .box .txt-bx .txt {
+	padding-bottom: 20px;
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+	font-size: 18px;
+	color: #222;
+}
+
+.pre_who_box .box .txt-bx .txt:last-child {
+	padding-bottom: 0;
+}
+
+.pre_acne_box {
+	border: 40px solid #f9f9f9;
+	padding: 40px;
+}
+
+.pre_acne_box .img-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.pre_acne_box .img-wrap .txt-bx {
+	font-size: 18px;
+	color: #222;
+	font-weight: 700;
+	padding-top: 20px;
+}
+
+.pre-qna_box {
+	border: 40px solid #f9f9f9;
+	text-align: left;
+}
+
+.pre-qna_box .q_box {
+	padding: 20px 40px;
+	font-size: 18px;
+	color: #222;
+	font-weight: 500;
+}
+
+.pre-qna_box .q_box .icon-q {
+	padding-right: 15px;
+}
+
+.pre-qna_box .a_box {
+	padding: 20px 40px;
+	border-top: 1px solid #ddd;
+	border-bottom: 9px solid #f9f9f9;
+	color: #666;
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+.pre_acne_box .img-wrap .icon{
+    margin-top: -25px;
+}

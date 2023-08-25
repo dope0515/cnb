@@ -1149,7 +1149,7 @@
 .bg_peach {
     background-color: #fff7ea;
 }
-.ptt_table thead tr th, .ptt_table tbody tr td {height: 50px; border-right: 1px solid #ddd;}
+.ptt_table thead tr th, .ptt_table tbody tr td {height: 50px; border-right: 1px solid #ddd; padding: 6px;}
 
 .ptt_table thead tr th:last-child, .ptt_table tbody tr td:last-child {border-right: 0;} 
 
@@ -1266,7 +1266,8 @@
                 align-items: center;
                 justify-content: center;
                 gap: 4px;
-                margin-left: 0;
+                margin-left: auto;
+                margin-right: auto;
                 &::before {
                     position: static;
                     transform: translateY(0);
@@ -1416,6 +1417,7 @@
     }
 }
 .drt_notice {
+    border-width: 2px;
     >div {
         display: flex;
         align-items: center;
@@ -1424,6 +1426,7 @@
         }
         .txt_bx {
             width: 30%;
+            line-height: 1.3;
         }
         .clinic_notice_list {
             width: 62%;
