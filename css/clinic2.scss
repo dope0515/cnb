@@ -193,6 +193,7 @@
                     justify-content: center;
                     font-weight: 500;
                     font-size: 16px;
+                    line-height: 1.25;
                     width: 105px;
                     height: 105px;
                     border: 5px solid #dadada;
@@ -253,8 +254,10 @@
             li {
                 width: 140px;
                 height: 140px;
+                font-weight: 500;
                 font-size: 16px;
-                border-width: 4px;
+                line-height: 1.45;
+                border-width: 5px;
                 position: relative;
                 &::after {
                     content: '';
@@ -578,19 +581,21 @@
             gap: 66px;
             li {
                 width: calc(100% / 3 - 44px);
-                position: relative;
-                &::after {
-                    content: '';
-                    width: 12px;
-                    height: 20px;
-                    background-image: url(/pc/cnp/images/special-clinic/arrow_right2.png);
-                    background-size: 12px 20px;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    position: absolute;
-                    transform: translateY(-50%);
-                    top: calc(50% - 18px);
-                    right: -40px;
+                .img_bx {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        width: 12px;
+                        height: 20px;
+                        background-image: url(/pc/cnp/images/special-clinic/arrow_right2.png);
+                        background-size: 12px 20px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        position: absolute;
+                        transform: translateY(-50%);
+                        top: 50%;
+                        right: -40px;
+                    }
                 }
                 .txt_bx {
                     font-size: 16px;
@@ -601,8 +606,10 @@
                     }
                 }
                 &:nth-child(3),&:last-child {
-                    &::after {
-                        display: none;
+                    .img_bx {
+                        &::after {
+                            display: none;
+                        }
                     }
                 }
             }
@@ -834,6 +841,7 @@
             }
             .qna_desc {
                 padding: 25px;
+                font-size: 16px;
             }
             &:last-child {
                 margin-bottom: 0;
@@ -1036,7 +1044,7 @@
                 line-height: 1.25;
                 color: #fff;
                 border-radius: 50%;
-                padding: 20px;
+                padding: 18px;
             }
             &::after {
                 content: '';
@@ -1486,6 +1494,7 @@
                     justify-content: center;
                     font-weight: 500;
                     font-size: 16px;
+                    line-height: 1.25;
                     width: 105px;
                     height: 105px;
                     border: 5px solid #dadada;
@@ -1736,6 +1745,8 @@
                 align-items: center;
                 justify-content: center;
                 font-weight: 500;
+                font-size: 16px;
+                line-height: 1.25;
                 color: #000;
                 width: 110px;
                 height: 110px;

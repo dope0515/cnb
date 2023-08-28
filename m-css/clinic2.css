@@ -261,7 +261,7 @@
   max-height: 105px;
   width: 74px;
   height: 74px;
-  border: 5px solid #dadada;
+  border: 4px solid #dadada;
   border-radius: 50%;
   padding: 10px;
   box-sizing: border-box;
@@ -1209,6 +1209,7 @@
 .clininc_recommend .list_bx ul li {
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.25;
   color: #222;
   position: relative;
   margin-bottom: 16px;
@@ -1745,6 +1746,7 @@
 
 .step_stone_bx .clinic_flex_bx.type01 {
   gap: 10px;
+  flex-direction: row;
   flex-wrap: wrap;
   max-width: 380px;
   margin: 0 auto;

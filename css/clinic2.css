@@ -193,6 +193,7 @@
   justify-content: center;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.25;
   width: 105px;
   height: 105px;
   border: 5px solid #dadada;
@@ -247,8 +248,10 @@
 .clinic_y_circle.with_plus ul li {
   width: 140px;
   height: 140px;
+  font-weight: 500;
   font-size: 16px;
-  border-width: 4px;
+  line-height: 1.45;
+  border-width: 5px;
   position: relative;
 }
 .clinic_y_circle.with_plus ul li::after {
@@ -556,9 +559,11 @@
 }
 .clinic_flex_bx.healing.type01 li {
   width: calc(33.3333333333% - 44px);
+}
+.clinic_flex_bx.healing.type01 li .img_bx {
   position: relative;
 }
-.clinic_flex_bx.healing.type01 li::after {
+.clinic_flex_bx.healing.type01 li .img_bx::after {
   content: "";
   width: 12px;
   height: 20px;
@@ -568,7 +573,7 @@
   background-position: center;
   position: absolute;
   transform: translateY(-50%);
-  top: calc(50% - 18px);
+  top: 50%;
   right: -40px;
 }
 .clinic_flex_bx.healing.type01 li .txt_bx {
@@ -579,7 +584,7 @@
   display: inline-block;
   color: #222;
 }
-.clinic_flex_bx.healing.type01 li:nth-child(3)::after, .clinic_flex_bx.healing.type01 li:last-child::after {
+.clinic_flex_bx.healing.type01 li:nth-child(3) .img_bx::after, .clinic_flex_bx.healing.type01 li:last-child .img_bx::after {
   display: none;
 }
 .clinic_flex_bx.botox.type01, .clinic_flex_bx.wedding.type01 {
@@ -820,6 +825,7 @@
 }
 .clinic_qna ul li .qna_desc {
   padding: 25px;
+  font-size: 16px;
 }
 .clinic_qna ul li:last-child {
   margin-bottom: 0;
@@ -1019,7 +1025,7 @@
   line-height: 1.25;
   color: #fff;
   border-radius: 50%;
-  padding: 20px;
+  padding: 18px;
 }
 .gold_ptt ul li::after {
   content: "";
@@ -1455,6 +1461,7 @@
   justify-content: center;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.25;
   width: 105px;
   height: 105px;
   border: 5px solid #dadada;
@@ -1678,6 +1685,8 @@
   align-items: center;
   justify-content: center;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
   color: #000;
   width: 110px;
   height: 110px;
