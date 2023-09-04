@@ -809,6 +809,7 @@
 
 .clinic_title_bracket {
     font-weight: 500; font-size: 16px; color: #222; letter-spacing: -0.02em; width: fit-content; position: relative; margin: 20px auto; word-break: keep-all;
+    padding: 0 20px;
     &.long {
         max-width: 900px;
         width: 100%;

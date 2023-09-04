@@ -795,6 +795,7 @@
   position: relative;
   margin: 20px auto;
   word-break: keep-all;
+  padding: 0 20px;
 }
 .clinic_title_bracket.long {
   max-width: 900px;
